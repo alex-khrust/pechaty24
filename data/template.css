@@ -74,18 +74,18 @@ margin: 20px 0;
     
 }
 .icgar {
-  background: url(/icons/guarantee_icon.png) 5px no-repeat;
+  background: url(icons/guarantee_icon.png) 5px no-repeat;
 padding: 10px 10px 10px 55px;
   font-size: 130%;
 }
 .icdos {
-   background: url(/icons/deliv_icon.png) 5px no-repeat;
+   background: url(icons/deliv_icon.png) 5px no-repeat;
 padding: 1px 10px 19px 55px;
   font-size: 110%;
     height: 29px;
 }
 .icopl {
-   background: url(/icons/pay_icon.png) 5px no-repeat;
+   background: url(icons/pay_icon.png) 5px no-repeat;
       font-size: 110%;
     height: 29px;
   padding: 1px 10px 19px 55px;
@@ -392,7 +392,7 @@ left: 551px;
     position: absolute;
     padding-left: 20px;
     font-family: 'Cuprum', sans-serif;
-    background-image: url(/data/map_icon.png);
+    background-image: url(data/map_icon.png);
     background-size: 15px;
     background-repeat: no-repeat;
 }
@@ -960,7 +960,7 @@ td
     cursor: default;
     margin: 2px;
     position: relative;
-    /* background: url(/images/tariff-block-bg.png) 0 0 repeat transparent; */
+    /* background: url(images/tariff-block-bg.png) 0 0 repeat transparent; */
     display: inline-block;
     width: 200px;
 		font:  14px 'Open Sans', sans-serif;
