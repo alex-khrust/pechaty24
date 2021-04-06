@@ -74,18 +74,18 @@ margin: 20px 0;
     
 }
 .icgar {
-  background: url(icons/guarantee_icon.png) 5px no-repeat;
+  background: url(../icons/guarantee_icon.png) 5px no-repeat;
 padding: 10px 10px 10px 55px;
   font-size: 130%;
 }
 .icdos {
-   background: url(icons/deliv_icon.png) 5px no-repeat;
+   background: url(../icons/deliv_icon.png) 5px no-repeat;
 padding: 1px 10px 19px 55px;
   font-size: 110%;
     height: 29px;
 }
 .icopl {
-   background: url(icons/pay_icon.png) 5px no-repeat;
+   background: url(../icons/pay_icon.png) 5px no-repeat;
       font-size: 110%;
     height: 29px;
   padding: 1px 10px 19px 55px;
@@ -308,9 +308,9 @@ ul li ul li ul, ol li ol li ol
 }
 .Main
 {
+	height: auto;
 	min-height: 100%;
 	position: relative;
-	- height: 100%;
 }
 
 #box
@@ -412,7 +412,7 @@ left: 551px;
 .Header .HeaderHolder .Contacts .Skype
 {
 	padding:0 0 0 26px;
-	background-image:url(iconskyp.png);
+	background-image:url(../iconskyp.png);
 	background-position:0 0;
 	background-repeat:no-repeat;
 	margin-bottom:5px;
