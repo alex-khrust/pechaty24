@@ -1,0 +1,29 @@
+.boxind {
+  border: 1px solid #FFD800;
+    width: 25%;
+    padding:  15px;
+    text-align:  left;
+    font-family: 'PT Sans',Helvetica,Arial,sans-serif;
+    font-size: 14px;
+      float: left;
+    margin: 0 2%;
+  height:480px;
+}
+
+.boxind h2 {
+text-align: left;
+  font-weight: 500;
+  line-height: 1.1;
+  font-size:20px;
+  color:black;
+}
+a.knopka {
+  color: #fff; /* цвет текста */
+  text-decoration: none; /* убирать подчёркивание у ссылок */
+  user-select: none; /* убирать выделение текста */
+  background: rgb(212,75,56); /* фон кнопки */
+  padding: .7em 1.5em; /* отступ от текста */
+  outline: none; /* убирать контур в Mozilla */
+} 
+a.knopka:hover { background: rgb(232,95,76); color: #fff;} /* при наведении курсора мышки */
+a.knopka:active { background: rgb(152,15,0);  } /* при нажатии */

@@ -1,0 +1,141 @@
+ .leftimg {
+    float:left; /* Выравнивание по левому краю */
+    margin: 7px 7px 7px 0; /* Отступы вокруг картинки */
+   }
+
+
+
+.krug {
+  border:1px solid #d2d2d2;
+  background:#F6F9FD url(/images/vnimanie.png) left no-repeat;
+  padding:10px 10px 10px 55px;
+  margin:20px 20px;
+  line-height:140%;
+  border-radius: 15px;
+}
+
+
+
+table.price {
+/*width: 80%;*/
+height: 250px;
+font-size: 12pt;
+text-align:center;
+}
+table.price2 {
+width: 75%;
+height: 70px;
+font-size: 12pt;
+text-align:center;
+}
+table .price tr.col {
+background-color:#a19d8c;
+}
+table .price2 tr.col {
+background-color:#a19d8c;
+}
+table .price td {
+vertical-align:middle;
+  text-align:center;
+}
+table .osn {
+text-align:center;
+border-collapse: collapse;
+border: 1px dotted #ccc;
+}
+
+
+
+ul.tab-list
+{
+	display: block;
+}
+
+.tabsection-container ul.tab-list, ul.tab-list li 
+{
+	border: 0px;
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+.tabsection-container ul.tab-list
+{
+
+	height: 30px;
+}
+
+ul.tab-list li
+{
+	float: left;
+	margin-right: 2px;
+	height: 30px;
+	overflow: hidden;
+	display: block;
+	font-size: 12px;
+	border-bottom: solid 1px #c2c2c2;
+}
+
+ul.tab-list a:link, ul.tab-list a:visited
+{
+	background: url('http://www.skyboom.ru/bitrix/wizards/samiko/tabs/templates/.default/images/tabs.gif') right 60px;
+	color: #474747;
+	display: block;
+	font-weight: bold;
+	line-height: 30px;
+	text-decoration: none;
+}
+
+ul.tab-list a span
+{
+	background:url('http://www.skyboom.ru/bitrix/wizards/samiko/tabs/templates/.default/images/tabs.gif') left 60px;
+	display: block;
+	margin-right: 14px;
+	padding-left: 14px;
+}
+
+ul.tab-list a:hover
+{
+	background: url('http://www.skyboom.ru/bitrix/wizards/samiko/tabs/templates/.default/images/tabs.gif') right 30px;
+	display:block;
+}
+
+ul.tab-list a:hover span
+{
+	background: url('http://www.skyboom.ru/bitrix/wizards/samiko/tabs/templates/.default/images/tabs.gif') left 30px;
+	display: block;
+	white-space: nowrap;
+}
+
+ul.tab-list li.active a:link, 
+ul.tab-list li.active a:visited, 
+ul.tab-list li.active a:visited, 
+ul.tab-list li.active a:hover
+{
+	background: url('http://www.skyboom.ru/bitrix/wizards/samiko/tabs/templates/.default/images/tabs.gif') right 0 no-repeat;
+	border:0;
+}
+
+ul.tab-list li.active a span, 
+ul.tab-list li.active a:hover span
+{
+	background: url('http://www.skyboom.ru/bitrix/wizards/samiko/tabs/templates/.default/images/tabs.gif') left 0 no-repeat;
+	color: black;
+}
+
+.tab-boby-container
+{
+	/* background: url('images/vertical-line.gif') repeat-y; */
+	/* border-left:dotted 1px #79B30B; */
+	padding: 20px 20px;
+}
+
+.tab-boby-container .tab-off
+{
+	display: none;
+}
+
+.tab-boby-container div.container
+{
+	width: 90%;
+}
