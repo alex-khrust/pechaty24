@@ -1,0 +1,56 @@
+.Content
+  width: 100%
+  max-width: 1000px
+  padding: 0 10px
+
+h1
+  width: 100%
+
+.MainMenu .MainMenuHolder,
+.MainMenu .MainMenuHolder .List
+  width: 100%
+  max-width: 1000px
+
+.MainMenu .MainMenuHolder .List .Item,
+.MainMenu .MainMenuHolder .List .Item a
+  height: 100%
+  max-height: 42px
+  display: flex !important
+  align-items: center !important
+  justify-content: center !important
+
+@media ( max-width: 1000px )
+  .MainMenu
+    width: 100%
+    height: auto
+    background-repeat: repeat
+
+  .MainMenu .MainMenuHolder .List
+    display: flex
+    flex-flow: column
+    padding: 0
+
+  .MainMenu .MainMenuHolder .List .Item,
+  .MainMenu .MainMenuHolder .List .Item a
+    width: 100%
+    max-width: 100%
+    margin: 0
+    padding: 0
+
+  .MainMenu .MainMenuHolder .Label
+    display: none
+
+  .MainPlBl
+
+    display: flex
+    flex-flow: wrap
+    justify-content: center
+
+    .boxind
+      width: 100%
+      height: auto
+      max-width: 282px
+      max-height: 480px
+      margin-bottom: 4%
+    .z2
+      width: 100%

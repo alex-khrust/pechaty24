@@ -1226,5 +1226,3 @@ list-style-type: none;
 .breadcrumbs a:first-child::before {
     left: 24px;
 }
-
-@import url('../css/app.min.css');

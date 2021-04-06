@@ -1,14 +1,78 @@
-.MainMenu .MainMenuHolder .List li,
-.MainMenu .MainMenuHolder .List li a {
+.Content {
   width: 100%;
+  max-width: 1000px;
+  padding: 0 10px;
+}
+
+h1 {
+  width: 100%;
+}
+
+.MainMenu .MainMenuHolder,
+.MainMenu .MainMenuHolder .List {
+  width: 100%;
+  max-width: 1000px;
+}
+
+.MainMenu .MainMenuHolder .List .Item,
+.MainMenu .MainMenuHolder .List .Item a {
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  max-height: 42px;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+}
+
+@media (max-width: 1000px) {
+  .MainMenu {
+    width: 100%;
+    height: auto;
+    background-repeat: repeat;
+  }
+  .MainMenu .MainMenuHolder .List {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    padding: 0;
+  }
+  .MainMenu .MainMenuHolder .List .Item,
+  .MainMenu .MainMenuHolder .List .Item a {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .MainMenu .MainMenuHolder .Label {
+    display: none;
+  }
+  .MainPlBl {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: wrap;
+        flex-flow: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .MainPlBl .boxind {
+    width: 100%;
+    height: auto;
+    max-width: 282px;
+    max-height: 480px;
+    margin-bottom: 4%;
+  }
+  .MainPlBl .z2 {
+    width: 100%;
+  }
 }
