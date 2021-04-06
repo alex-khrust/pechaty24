@@ -60,7 +60,7 @@ type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
                      </div>
                     </div>
                     <div class="SiteName">
-	                     <a href="/"><img src="data/sitename.png" alt="Pechaty24.ru - Изготовление печатей" title="Печати и штампы - Главная" border="0" width="329" height="48"></a>	                	<br>
+	                     <a href=""><img src="data/sitename.png" alt="Pechaty24.ru - Изготовление печатей" title="Печати и штампы - Главная" border="0" width="329" height="48"></a>	                	<br>
                     <span>
                     	Частное изготовление печатей и штампов                    </span>
                     </div>
