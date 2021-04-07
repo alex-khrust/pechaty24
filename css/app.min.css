@@ -41,6 +41,11 @@ img {
   display: flex;
 }
 
+.MainMenu .MainMenuHolder .Item table,
+.MainMenu .MainMenuHolder .List .Item table {
+  width: 100%;
+}
+
 .MainMenu .MainMenuHolder .List .Item,
 .MainMenu .MainMenuHolder .List .Item a {
   height: 100%;
@@ -509,6 +514,9 @@ img {
 }
 
 @media (max-width: 768px) {
+  h2 {
+    text-align: center;
+  }
   .MainPlBl .boxind {
     max-width: 500px;
   }
