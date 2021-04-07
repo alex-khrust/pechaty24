@@ -14,6 +14,9 @@
 h1
   width: 100%
 
+img
+  box-sizing: border-box
+
 .MainMenu .MainMenuHolder,
 .MainMenu .MainMenuHolder .List
   width: 100%
@@ -114,7 +117,17 @@ h1
   .zakazstamp
     width: 100%
     max-width: 480px
-
+    .bodyzakaz
+      min-height: 300px !important
+      max-height: unset !important
+      padding: 0 10px
+      box-sizing: border-box
+      .leftpart,
+      .rightpart
+        max-width: unset
+        img
+          height: 300px
+          object-fit: cover
 
   .bodyzakaz
     width: 100%
@@ -124,6 +137,15 @@ h1
     align-items: center
     justify-content: space-evenly
     flex-flow: wrap
+
+    img
+      width: auto !important
+      height: auto
+      max-width: 200px
+      object-fit: contain
+    
+  .leftpart img
+    padding: 10px
 
   .leftpart,
   .rightpart

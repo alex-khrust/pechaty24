@@ -8,6 +8,11 @@ h1 {
   width: 100%;
 }
 
+img {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 .MainMenu .MainMenuHolder,
 .MainMenu .MainMenuHolder .List {
   width: 100%;
@@ -146,6 +151,33 @@ h1 {
     width: 100%;
     max-width: 480px;
   }
+  .zakaznov .bodyzakaz,
+  .zakazott .bodyzakaz,
+  .zakazstamp .bodyzakaz {
+    min-height: 300px !important;
+    max-height: unset !important;
+    padding: 0 10px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .zakaznov .bodyzakaz .leftpart,
+  .zakaznov .bodyzakaz .rightpart,
+  .zakazott .bodyzakaz .leftpart,
+  .zakazott .bodyzakaz .rightpart,
+  .zakazstamp .bodyzakaz .leftpart,
+  .zakazstamp .bodyzakaz .rightpart {
+    max-width: unset;
+  }
+  .zakaznov .bodyzakaz .leftpart img,
+  .zakaznov .bodyzakaz .rightpart img,
+  .zakazott .bodyzakaz .leftpart img,
+  .zakazott .bodyzakaz .rightpart img,
+  .zakazstamp .bodyzakaz .leftpart img,
+  .zakazstamp .bodyzakaz .rightpart img {
+    height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
   .bodyzakaz {
     width: 100%;
     height: auto !important;
@@ -161,6 +193,16 @@ h1 {
             justify-content: space-evenly;
     -ms-flex-flow: wrap;
         flex-flow: wrap;
+  }
+  .bodyzakaz img {
+    width: auto !important;
+    height: auto;
+    max-width: 200px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .leftpart img {
+    padding: 10px;
   }
   .leftpart,
   .rightpart {
