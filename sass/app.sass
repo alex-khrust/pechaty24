@@ -1,5 +1,13 @@
+// *,
+// ::after,
+// ::before
+//   box-sizing: border-box
+
+// body
+//   overflow-x: hidden
+
 .Content
-  width: 100%
+  width: auto
   max-width: 1000px
   padding: 0 10px
 
@@ -10,6 +18,7 @@ h1
 .MainMenu .MainMenuHolder .List
   width: 100%
   max-width: 1000px
+  display: flex
 
 .MainMenu .MainMenuHolder .List .Item,
 .MainMenu .MainMenuHolder .List .Item a
@@ -19,7 +28,259 @@ h1
   align-items: center !important
   justify-content: center !important
 
+.icdos,
+.icgar,
+.icopl
+  // width: 100%
+  height: auto
+  min-height: 51px
+  max-width: 250px
+  padding: 0 10px 0 55px
+  display: flex
+  align-items: center
+  box-sizing: content-box
+
+.delivery-fields
+  width: 100%
+  max-width: 600px
+
+
+
 @media ( max-width: 1000px )
+
+  .Header
+    height: auto
+    max-height: 115px
+    .HeaderHolder
+      width: auto
+      max-width: 970px
+      padding: 10px
+      display: flex
+      align-items: center
+      .SiteName
+        position: relative
+        left: unset
+        top: unset
+        margin-right: 100px
+        a
+          display: flex
+          &+br
+            display: none
+        img
+          width: 100% !important
+          max-width: 329px !important
+          height: auto !important
+          max-height: 48px !important
+        span
+          display: flex
+          padding-right: 20px
+      .PhoneNumber,
+      .Contacts
+        display: none
+
+
+  .MainPlBl
+
+    display: flex
+    flex-flow: wrap
+    justify-content: center
+
+    .boxind
+      width: 100%
+      height: auto
+      max-width: 282px
+      max-height: 480px
+      margin-bottom: 4%
+    .z2
+      width: auto
+      max-width: 100%
+
+  .formazakaza
+    display: flex
+    flex-flow: wrap
+    align-items: center
+    justify-content: center
+
+  .order-panel
+    width: 100%
+    max-width: 465px
+    left: unset !important
+    margin: 0
+    .bodyzakaz
+      
+
+  .zakaznov, 
+  .zakazott, 
+  .zakazstamp
+    width: 100%
+    max-width: 480px
+
+
+  .bodyzakaz
+    width: 100%
+    height: auto !important
+    max-height: 320px
+    display: flex
+    align-items: center
+    justify-content: space-evenly
+    flex-flow: wrap
+
+  .leftpart,
+  .rightpart
+    width: auto
+    max-width: 50%
+    & + .knopka
+      width: 100%
+      margin: 0 auto
+
+  .icdos,
+  .icgar,
+  .icopl
+    width: 100%
+    margin: 8px
+
+  .w500
+    width: 100% !important
+    max-width: 500px
+
+  .step-3
+    .w80
+      width: auto
+      max-width: 80%
+      display: flex
+      justify-content: space-evenly
+      flex-flow: wrap
+    .w33
+      width: 100%
+      max-width: 33%
+      min-width: 300px
+      padding: 0 10px
+      display: flex
+      align-items: center
+      justify-content: space-between
+      flex-flow: column
+      input[type=text],
+      textarea,
+      div
+        width: 100% !important
+      *,
+      ::after,
+      ::before
+        box-sizing: border-box
+
+
+  #primer
+    &+div
+      width: 100%
+      display: flex
+      flex-flow: wrap
+      align-items: baseline
+      .ottiskpr
+        padding: 0 10px
+        img
+          object-fit: cover
+
+
+  .BottomBlock .BottomBlockHolder
+    ul
+      width: 100%
+      height: auto
+      display: flex
+      align-items: center
+      justify-content: space-evenly
+      flex-flow: wrap
+      li
+        width: auto
+        max-width: 160px
+        margin: 10px
+        .ImgNav
+          width: 100%
+          height: auto
+          max-height: 100px
+          padding-bottom: 5px
+          td
+            width: 100%
+            height: auto
+            a
+              display: flex
+              align-items: center
+              justify-content: center
+            img
+              width: auto
+              height: 100%
+              max-height: 100px
+              object-fit: cover
+        &:nth-of-type(2)
+          img
+            max-height: 94px !important
+    br
+      display: none
+
+
+  .BottomBlock .BottomBlockHolder, 
+  .FooterHolder
+    width: auto
+    max-width: 970px
+    padding: 10px
+
+  #box
+    padding: 0
+
+  .Footer
+    height: auto
+    min-height: 135px
+    background-size: cover
+    position: relative
+
+  .FooterHolder
+    width: auto
+    height: auto
+    display: flex
+    flex-flow: wrap
+    justify-content: space-between
+    gap: 0 20px
+
+    .CopyRight
+      margin: 0
+      order: 1
+    .OrderBy
+      order: 2
+      display: flex
+      align-items: center
+      br
+        display: none
+
+
+
+
+  @keyframes to-left
+    0%   
+      bottom: 0
+      left: unset
+    50%  
+      bottom: 30px
+      left: unset
+    100% 
+      bottom: 0
+      left: unset
+  
+  @keyframes to-right
+    0%   
+      bottom: 10px
+      left: unset
+    50%  
+      bottom: -40px
+      left: unset
+    100% 
+      bottom: 10px
+      left: unset
+  
+
+@media ( max-width: 768px )
+
+  .MainPlBl .boxind
+    max-width: 500px
+
   .MainMenu
     width: 100%
     height: auto
@@ -40,17 +301,22 @@ h1
   .MainMenu .MainMenuHolder .Label
     display: none
 
-  .MainPlBl
+  .bodyzakaz
+    max-height: unset
+    flex-flow: column
 
-    display: flex
-    flex-flow: wrap
-    justify-content: center
+  // .order-panel
+  //   .bodyzakaz
+  //     div,
+  //     a
+  //       width: 100%
 
-    .boxind
-      width: 100%
-      height: auto
-      max-width: 282px
-      max-height: 480px
-      margin-bottom: 4%
-    .z2
-      width: 100%
+  .formazakaza
+    .bodyzakaz
+      flex-flow: row wrap
+    .zakaznov, 
+    .zakazott, 
+    .zakazstamp
+      margin-left: 0
+      margin-bottom: 7px
+

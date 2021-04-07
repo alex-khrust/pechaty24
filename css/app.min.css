@@ -1,5 +1,5 @@
 .Content {
-  width: 100%;
+  width: auto;
   max-width: 1000px;
   padding: 0 10px;
 }
@@ -12,6 +12,9 @@ h1 {
 .MainMenu .MainMenuHolder .List {
   width: 100%;
   max-width: 1000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .MainMenu .MainMenuHolder .List .Item,
@@ -29,7 +32,380 @@ h1 {
           justify-content: center !important;
 }
 
+.icdos,
+.icgar,
+.icopl {
+  height: auto;
+  min-height: 51px;
+  max-width: 250px;
+  padding: 0 10px 0 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.delivery-fields {
+  width: 100%;
+  max-width: 600px;
+}
+
 @media (max-width: 1000px) {
+  .Header {
+    height: auto;
+    max-height: 115px;
+  }
+  .Header .HeaderHolder {
+    width: auto;
+    max-width: 970px;
+    padding: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .Header .HeaderHolder .SiteName {
+    position: relative;
+    left: unset;
+    top: unset;
+    margin-right: 100px;
+  }
+  .Header .HeaderHolder .SiteName a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .Header .HeaderHolder .SiteName a + br {
+    display: none;
+  }
+  .Header .HeaderHolder .SiteName img {
+    width: 100% !important;
+    max-width: 329px !important;
+    height: auto !important;
+    max-height: 48px !important;
+  }
+  .Header .HeaderHolder .SiteName span {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-right: 20px;
+  }
+  .Header .HeaderHolder .PhoneNumber,
+  .Header .HeaderHolder .Contacts {
+    display: none;
+  }
+  .MainPlBl {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: wrap;
+        flex-flow: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .MainPlBl .boxind {
+    width: 100%;
+    height: auto;
+    max-width: 282px;
+    max-height: 480px;
+    margin-bottom: 4%;
+  }
+  .MainPlBl .z2 {
+    width: auto;
+    max-width: 100%;
+  }
+  .formazakaza {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: wrap;
+        flex-flow: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .order-panel {
+    width: 100%;
+    max-width: 465px;
+    left: unset !important;
+    margin: 0;
+  }
+  .zakaznov,
+  .zakazott,
+  .zakazstamp {
+    width: 100%;
+    max-width: 480px;
+  }
+  .bodyzakaz {
+    width: 100%;
+    height: auto !important;
+    max-height: 320px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -ms-flex-flow: wrap;
+        flex-flow: wrap;
+  }
+  .leftpart,
+  .rightpart {
+    width: auto;
+    max-width: 50%;
+  }
+  .leftpart + .knopka,
+  .rightpart + .knopka {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .icdos,
+  .icgar,
+  .icopl {
+    width: 100%;
+    margin: 8px;
+  }
+  .w500 {
+    width: 100% !important;
+    max-width: 500px;
+  }
+  .step-3 .w80 {
+    width: auto;
+    max-width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -ms-flex-flow: wrap;
+        flex-flow: wrap;
+  }
+  .step-3 .w33 {
+    width: 100%;
+    max-width: 33%;
+    min-width: 300px;
+    padding: 0 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  .step-3 .w33 input[type=text],
+  .step-3 .w33 textarea,
+  .step-3 .w33 div {
+    width: 100% !important;
+  }
+  .step-3 .w33 *,
+  .step-3 .w33 ::after,
+  .step-3 .w33 ::before {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  #primer + div {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: wrap;
+        flex-flow: wrap;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+  #primer + div .ottiskpr {
+    padding: 0 10px;
+  }
+  #primer + div .ottiskpr img {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .BottomBlock .BottomBlockHolder ul {
+    width: 100%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -ms-flex-flow: wrap;
+        flex-flow: wrap;
+  }
+  .BottomBlock .BottomBlockHolder ul li {
+    width: auto;
+    max-width: 160px;
+    margin: 10px;
+  }
+  .BottomBlock .BottomBlockHolder ul li .ImgNav {
+    width: 100%;
+    height: auto;
+    max-height: 100px;
+    padding-bottom: 5px;
+  }
+  .BottomBlock .BottomBlockHolder ul li .ImgNav td {
+    width: 100%;
+    height: auto;
+  }
+  .BottomBlock .BottomBlockHolder ul li .ImgNav td a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .BottomBlock .BottomBlockHolder ul li .ImgNav td img {
+    width: auto;
+    height: 100%;
+    max-height: 100px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .BottomBlock .BottomBlockHolder ul li:nth-of-type(2) img {
+    max-height: 94px !important;
+  }
+  .BottomBlock .BottomBlockHolder br {
+    display: none;
+  }
+  .BottomBlock .BottomBlockHolder,
+  .FooterHolder {
+    width: auto;
+    max-width: 970px;
+    padding: 10px;
+  }
+  #box {
+    padding: 0;
+  }
+  .Footer {
+    height: auto;
+    min-height: 135px;
+    background-size: cover;
+    position: relative;
+  }
+  .FooterHolder {
+    width: auto;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: wrap;
+        flex-flow: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 0 20px;
+  }
+  .FooterHolder .CopyRight {
+    margin: 0;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .FooterHolder .OrderBy {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .FooterHolder .OrderBy br {
+    display: none;
+  }
+  @-webkit-keyframes to-left {
+    0% {
+      bottom: 0;
+      left: unset;
+    }
+    50% {
+      bottom: 30px;
+      left: unset;
+    }
+    100% {
+      bottom: 0;
+      left: unset;
+    }
+  }
+  @keyframes to-left {
+    0% {
+      bottom: 0;
+      left: unset;
+    }
+    50% {
+      bottom: 30px;
+      left: unset;
+    }
+    100% {
+      bottom: 0;
+      left: unset;
+    }
+  }
+  @-webkit-keyframes to-right {
+    0% {
+      bottom: 10px;
+      left: unset;
+    }
+    50% {
+      bottom: -40px;
+      left: unset;
+    }
+    100% {
+      bottom: 10px;
+      left: unset;
+    }
+  }
+  @keyframes to-right {
+    0% {
+      bottom: 10px;
+      left: unset;
+    }
+    50% {
+      bottom: -40px;
+      left: unset;
+    }
+    100% {
+      bottom: 10px;
+      left: unset;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .MainPlBl .boxind {
+    max-width: 500px;
+  }
   .MainMenu {
     width: 100%;
     height: auto;
@@ -55,24 +431,23 @@ h1 {
   .MainMenu .MainMenuHolder .Label {
     display: none;
   }
-  .MainPlBl {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-flow: wrap;
-        flex-flow: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+  .bodyzakaz {
+    max-height: unset;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
   }
-  .MainPlBl .boxind {
-    width: 100%;
-    height: auto;
-    max-width: 282px;
-    max-height: 480px;
-    margin-bottom: 4%;
+  .formazakaza .bodyzakaz {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
   }
-  .MainPlBl .z2 {
-    width: 100%;
+  .formazakaza .zakaznov,
+  .formazakaza .zakazott,
+  .formazakaza .zakazstamp {
+    margin-left: 0;
+    margin-bottom: 7px;
   }
 }
