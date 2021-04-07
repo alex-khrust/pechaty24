@@ -19,19 +19,19 @@ type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
 
 <meta name="keywords" content="заказ печати, печати дёшево">
 <meta name="description" content="Акция на изготовление второй печати">
-<link href="data/core0000.css" type="text/css" rel="stylesheet">
-<link href="data/style000.css" type="text/css" rel="stylesheet">
-<link href="data/style001.css" type="text/css" rel="stylesheet">
-<link href="data/style002.css" type="text/css" rel="stylesheet">
-<link href="data/styles00.css" type="text/css" rel="stylesheet">
-<link href="data/template.css" type="text/css" rel="stylesheet">
+<link href="../data/core0000.css" type="text/css" rel="stylesheet">
+<link href="../data/style000.css" type="text/css" rel="stylesheet">
+<link href="../data/style001.css" type="text/css" rel="stylesheet">
+<link href="../data/style002.css" type="text/css" rel="stylesheet">
+<link href="../data/styles00.css" type="text/css" rel="stylesheet">
+<link href="../data/template.css" type="text/css" rel="stylesheet">
 <link rel="icon" href="http://www.pechaty24.ru/favicon.ico" type="image/x-icon">
-<script type="text/javascript" src="data/core0000.js"></script>
-<script type="text/javascript" src="data/core_aja.js"></script>
-<script type="text/javascript" src="data/session0.js"></script>
-<script type="text/javascript" src="data/script00.js"></script>
-<link href="data/main0000.htm" rel="stylesheet" type="text/css">
-<link href="data/slide000.htm" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="../data/core0000.js"></script>
+<script type="text/javascript" src="../data/core_aja.js"></script>
+<script type="text/javascript" src="../data/session0.js"></script>
+<script type="text/javascript" src="../data/script00.js"></script>
+<link href="../data/main0000.htm" rel="stylesheet" type="text/css">
+<link href="../data/slide000.htm" rel="stylesheet" type="text/css">
 <style>
    .leftimg {
     float:left; /* Выравнивание по левому краю */
@@ -60,7 +60,7 @@ type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
                      </div>
                     </div>
                     <div class="SiteName">
-	                     <a href=""><img src="data/sitename.png" alt="Pechaty24.ru - Изготовление печатей" title="Печати и штампы - Главная" border="0" width="329" height="48"></a>	                	<br>
+	                     <a href="../"><img src="../data/sitename.png" alt="Pechaty24.ru - Изготовление печатей" title="Печати и штампы - Главная" border="0" width="329" height="48"></a>	                	<br>
                     <span>
                     	Частное изготовление печатей и штампов                    </span>
                     </div>
@@ -82,14 +82,14 @@ type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
 				<li class="Item">
 			<table>
 				<tr>
-					<td><a href="price.html" class="ItEl">Цены и сроки</a></td>
+					<td><a href="../price.html" class="ItEl">Цены и сроки</a></td>
 				</tr>
 			</table>
 		</li>
-				<li class="Item"><table><tr><td><a href="osnastki.html" class="ItEl">Оснастки</a></td></tr></table></li>
-                 <li class="Item"><table><tr><td><a href="pechati_srochno.html" class="ItEl"><center>Печати срочно</center></a></td></tr></table></li>
-				<li class="Item"><table><tr><td><a href="deliv.html" class="ItEl">Доставка</a></td></tr></table></li>
-				<li class="Item Active"><table><tr><td><a href="news.html" class="ItEl">Новости</a></td></tr></table></li>
+				<li class="Item"><table><tr><td><a href="../osnastki.html" class="ItEl">Оснастки</a></td></tr></table></li>
+                 <li class="Item"><table><tr><td><a href="../pechati_srochno.html" class="ItEl"><center>Печати срочно</center></a></td></tr></table></li>
+				<li class="Item"><table><tr><td><a href="../deliv.html" class="ItEl">Доставка</a></td></tr></table></li>
+				<li class="Item Active"><table><tr><td><a href="../news.html" class="ItEl">Новости</a></td></tr></table></li>
 				
 	</ul>
                <div class="Label"></div>
@@ -157,48 +157,48 @@ if (!empty($_POST['submit'])) send_mail();
     <div class="ImgNav"> 	 
       <table> 	 
         <tbody> 
-          <tr><td><a href="index.html"><img src="data/televiso.png" width="96" height="104"></a></td></tr>
+          <tr><td><a href="../index.html"><img src="../data/televiso.png" width="96" height="104"></a></td></tr>
          </tbody>
        </table>
      </div>
    
-    <div class="NavTxt"><a href="index.html">Главная</a></div>
+    <div class="NavTxt"><a href="../index.html">Главная</a></div>
    </li>
  
   <li> 
     <div class="ImgNav"> 	 
       <table> 
         <tbody> 
-          <tr><td><a href="price.html"><img src="data/books000.png" width="106"></a></td></tr>
+          <tr><td><a href="../price.html"><img src="../data/books000.png" width="106"></a></td></tr>
          </tbody>
        </table>
      </div>
    
-    <div class="NavTxt"><a href="price.html">Цены и сроки</a></div>
+    <div class="NavTxt"><a href="../price.html">Цены и сроки</a></div>
    </li>
  
   <li> 
     <div class="ImgNav"> 		 
       <table> 
         <tbody> 
-          <tr> 	<td><a href="osnastki.html"><img src="data/faq00000.jpg" height="105"></a></td> </tr>
+          <tr> 	<td><a href="../osnastki.html"><img src="../data/faq00000.jpg" height="105"></a></td> </tr>
          </tbody>
        </table>
      </div>
    
-    <div class="NavTxt"><a href="osnastki.html">Оснастки</a></div>
+    <div class="NavTxt"><a href="../osnastki.html">Оснастки</a></div>
    </li>
  
   <li> 
     <div class="ImgNav"> 		 
       <table> 	 
         <tbody> 
-          <tr><td><a href="deliv.html"><img src="data/stl00000.png" width="104" height="102"></a></td></tr>
+          <tr><td><a href="../deliv.html"><img src="../data/stl00000.png" width="104" height="102"></a></td></tr>
          </tbody>
        </table>
      </div>
    
-    <div class="NavTxt"><a href="deliv.html">Доставка</a></div>
+    <div class="NavTxt"><a href="../deliv.html">Доставка</a></div>
    </li>
  </ul>
 <br><br><br>

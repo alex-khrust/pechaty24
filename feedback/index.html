@@ -4,9 +4,9 @@
 <head>
     <meta charset="utf-8">
     <title>Форма обратной связи</title>
-    <link rel="stylesheet" href="feedback/vendors/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="feedback/vendors/jgrowl/jquery.jgrowl.min.css">
-    <link rel="stylesheet" href="feedback/css/main.css">
+    <link rel="stylesheet" href="../feedback/vendors/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../feedback/vendors/jgrowl/jquery.jgrowl.min.css">
+    <link rel="stylesheet" href="../feedback/css/main.css">
 </head>
 
 <body>
@@ -23,7 +23,7 @@
                 <div class="panel-body">
 
                     <!-- Форма обратной связи -->
-                    <form id="feedbackForm" action="feedback/process/process.php" enctype="multipart/form-data"
+                    <form id="feedbackForm" action="../feedback/process/process.php" enctype="multipart/form-data"
                           novalidate>
                         <div class="row">
                             <div class="col-sm-6">
@@ -70,8 +70,8 @@
 
                         <!-- Капча -->
                         <div class="captcha">
-                            <img class="img-captcha" src="feedback/captcha/captcha.php"
-                                 data-src="feedback/captcha/captcha.php">
+                            <img class="img-captcha" src="../feedback/captcha/captcha.php"
+                                 data-src="../feedback/captcha/captcha.php">
                             <div class="btn btn-default refresh-captcha"><i class="glyphicon glyphicon-refresh"></i>
                                 Обновить
                             </div>
@@ -87,7 +87,7 @@
                         <div class="checkbox">
                             <label>
                                 <input type="checkbox" name="agree"> Нажимая кнопку, я принимаю условия
-                                <a href="#">Пользовательского соглашения</a> и даю своё согласие на обработку моих
+                                <a href="../#">Пользовательского соглашения</a> и даю своё согласие на обработку моих
                                 персональных данных, в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О
                                 персональных
                                 данных».
@@ -113,7 +113,7 @@
 
                     <!-- Сообщение об успешной отправки формы -->
                     <div class="alert alert-warning success-message hidden">
-                        Форма успешно отправлена. Нажмите на <a class="show-form" href="#">ссылку</a>, чтобы отправить ещё одно сообщение.
+                        Форма успешно отправлена. Нажмите на <a class="show-form" href="../#">ссылку</a>, чтобы отправить ещё одно сообщение.
                     </div>
 
                 </div>
@@ -122,10 +122,10 @@
     </div>
 </div>
 
-<script src="feedback/vendors/jquery/jquery-3.2.1.min.js"></script>
-<script src="feedback/vendors/bootstrap/js/bootstrap.min.js"></script>
-<script src="feedback/vendors/jgrowl/jquery.jgrowl.min.js"></script>
-<script src="feedback/js/main.js"></script>
+<script src="../feedback/vendors/jquery/jquery-3.2.1.min.js"></script>
+<script src="../feedback/vendors/bootstrap/js/bootstrap.min.js"></script>
+<script src="../feedback/vendors/jgrowl/jquery.jgrowl.min.js"></script>
+<script src="../feedback/js/main.js"></script>
 
 </body>
 
