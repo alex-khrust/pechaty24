@@ -32,12 +32,14 @@ $from = "Reply-To: $email \r\n";
 if (mail($address, $sub, $mes, $from)) {
 	header("Location: ".$_SERVER["HTTP_REFERER"]);// Делаем реридект обратно
 	echo '<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />  <link rel="stylesheet" href="../css/app.min.css" />
+</head>
     <body>Письмо отправлено</body>';}
 else {
   header('Refresh: 5; URL=http://www.pechaty24.ru');
 	echo '<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />  <link rel="stylesheet" href="../css/app.min.css" />
+</head>
     <body>Письмо не отправлено, через 5 секунд вы вернетесь на страницу YYY</body>';}
 }
 exit; /* Выход без сообщения, если поле bezspama чем-то заполнено */
