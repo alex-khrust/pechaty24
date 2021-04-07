@@ -10,12 +10,26 @@
   width: auto
   max-width: 1000px
   padding: 0 10px
+  .RightPanel
+    padding: 0 0 40px 21px
 
 h1
   width: 100%
 
 img
   box-sizing: border-box
+
+.w50
+  width: 100%
+  max-width: 50%
+
+.w60
+  width: 100%
+  max-width: 60%
+
+.files-container
+  width: 100%
+  max-width: 160px
 
 .MainMenu .MainMenuHolder,
 .MainMenu .MainMenuHolder .List
@@ -81,6 +95,11 @@ img
       .Contacts
         display: none
 
+  .Content
+    &>table>tbody>tr
+      width: 100%
+      display: flex
+      justify-content: center
 
   .MainPlBl
 
@@ -108,7 +127,7 @@ img
     width: 100%
     max-width: 465px
     left: unset !important
-    margin: 0
+    margin: 0 15px
     .bodyzakaz
       
 
@@ -165,6 +184,16 @@ img
     width: 100% !important
     max-width: 500px
 
+  .step-2
+    .w60
+      display: flex
+      align-items: center
+      justify-content: center
+      flex-flow: wrap
+    .osn-image
+      width: auto
+      max-width: 200px
+
   .step-3
     .w80
       width: auto
@@ -190,16 +219,21 @@ img
       ::before
         box-sizing: border-box
 
-
   #primer
     &+div
       width: 100%
       display: flex
       flex-flow: wrap
       align-items: baseline
+      justify-content: center
       .ottiskpr
+        width: auto
         padding: 0 10px
+        margin: 15px 0
         img
+          width: 100%
+          height: auto
+          max-width: 320px
           object-fit: cover
 
 
@@ -330,6 +364,14 @@ img
   .MainMenu .MainMenuHolder .Label
     display: none
 
+
+  .Content
+    .RightPanel
+      padding: 0 0 40px
+    &>table>tbody>tr
+      flex-flow: wrap
+
+
   .bodyzakaz
     max-height: unset
     flex-flow: column
@@ -349,3 +391,16 @@ img
       margin-left: 0
       margin-bottom: 7px
 
+  .total-block
+    width: auto
+    display: flex
+    align-items: baseline
+    justify-content: center
+    flex-flow: wrap
+    .price-value,
+    .total-price
+      margin-right: 0
+    .select-button
+      width: 100%
+      top: 0 !important
+      margin-top: 30px !important

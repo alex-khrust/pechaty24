@@ -4,6 +4,10 @@
   padding: 0 10px;
 }
 
+.Content .RightPanel {
+  padding: 0 0 40px 21px;
+}
+
 h1 {
   width: 100%;
 }
@@ -11,6 +15,21 @@ h1 {
 img {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.w50 {
+  width: 100%;
+  max-width: 50%;
+}
+
+.w60 {
+  width: 100%;
+  max-width: 60%;
+}
+
+.files-container {
+  width: 100%;
+  max-width: 160px;
 }
 
 .MainMenu .MainMenuHolder,
@@ -105,6 +124,15 @@ img {
   .Header .HeaderHolder .Contacts {
     display: none;
   }
+  .Content > table > tbody > tr {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .MainPlBl {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -143,7 +171,7 @@ img {
     width: 100%;
     max-width: 465px;
     left: unset !important;
-    margin: 0;
+    margin: 0 15px;
   }
   .zakaznov,
   .zakazott,
@@ -224,6 +252,23 @@ img {
     width: 100% !important;
     max-width: 500px;
   }
+  .step-2 .w60 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-flow: wrap;
+        flex-flow: wrap;
+  }
+  .step-2 .osn-image {
+    width: auto;
+    max-width: 200px;
+  }
   .step-3 .w80 {
     width: auto;
     max-width: 80%;
@@ -276,11 +321,19 @@ img {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   #primer + div .ottiskpr {
+    width: auto;
     padding: 0 10px;
+    margin: 15px 0;
   }
   #primer + div .ottiskpr img {
+    width: 100%;
+    height: auto;
+    max-width: 320px;
     -o-object-fit: cover;
        object-fit: cover;
   }
@@ -484,6 +537,13 @@ img {
   .MainMenu .MainMenuHolder .Label {
     display: none;
   }
+  .Content .RightPanel {
+    padding: 0 0 40px;
+  }
+  .Content > table > tbody > tr {
+    -ms-flex-flow: wrap;
+        flex-flow: wrap;
+  }
   .bodyzakaz {
     max-height: unset;
     -webkit-box-orient: vertical;
@@ -502,5 +562,28 @@ img {
   .formazakaza .zakazstamp {
     margin-left: 0;
     margin-bottom: 7px;
+  }
+  .total-block {
+    width: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-flow: wrap;
+        flex-flow: wrap;
+  }
+  .total-block .price-value,
+  .total-block .total-price {
+    margin-right: 0;
+  }
+  .total-block .select-button {
+    width: 100%;
+    top: 0 !important;
+    margin-top: 30px !important;
   }
 }
