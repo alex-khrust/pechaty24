@@ -83,6 +83,45 @@ input[type=file]
   align-items: center
   justify-content: center
 
+
+
+
+// div.tbForm form, 
+// .tbForm_wait, 
+// .tbForm_result
+  // box-sizing: border-box
+  // width: 100%
+  // max-width: 400px
+  // height: auto
+  // border-radius: 15px
+  // background: #fff
+
+div.tbForm
+  &>div
+    width: 100% !important
+    height: 100% !important
+    padding: 15px 10px
+    margin: 0 !important
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-flow: wrap
+    position: absolute
+    background: none
+    box-sizing: border-box
+    border: none
+    border-radius: 0 !important
+    overflow: auto !important
+    form
+      width: 100%
+      height: auto
+      max-width: 400px
+      background: #fff
+      border: 1px solid #B6B6B6
+      border-radius: 15px
+
+
+
 @media ( max-width: 1000px )
 
   .Header

@@ -116,6 +116,40 @@ input[type=file] {
           justify-content: center;
 }
 
+div.tbForm > div {
+  width: 100% !important;
+  height: 100% !important;
+  padding: 15px 10px;
+  margin: 0 !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  position: absolute;
+  background: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: none;
+  border-radius: 0 !important;
+  overflow: auto !important;
+}
+
+div.tbForm > div form {
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+  background: #fff;
+  border: 1px solid #B6B6B6;
+  border-radius: 15px;
+}
+
 @media (max-width: 1000px) {
   .Header {
     height: auto;
