@@ -593,4 +593,4 @@ function calculate () {
 
 	$( $('.total-price')[0] ).html(price + ' руб.');
 	$('input[name="total-price"]').val(price);
-}
+};

@@ -5,7 +5,7 @@
 
 body
   background: #fff
-  // overflow-x: hidden
+  overflow-x: hidden
 
 .Content
   width: auto
@@ -72,14 +72,20 @@ table.price
 input[type=file]
   padding-left: 0 !important
 
+.btn
+  display: inline-flex
+  align-items: center
+  justify-content: center
+
 @media ( max-width: 1000px )
 
   .Header
     height: auto
     // max-height: 115px
-    padding: 10px 10px 15px
+    padding: 10px
     background: none
     box-sizing: border-box
+    box-shadow: 0 0 20px -5px #000
     .HeaderHolder
       height: auto
       width: auto
@@ -93,7 +99,6 @@ input[type=file]
         position: relative
         left: unset
         top: unset
-        padding-right: 100px
         margin-right: auto
         margin-bottom: 15px
         order: 1
@@ -382,16 +387,52 @@ input[type=file]
       left: unset
   
 
-@media ( max-width: 768px )
+@media ( max-width: 767px )
 
   h1,
   h2
     text-align: center
 
+  .locked
+    overflow: hidden
+
   .Header
     max-height: unset
+    padding: 10px
+    margin-bottom: 25px
+    box-shadow: 0 0 20px -5px #000
     .HeaderHolder
       height: auto !important
+
+  .MainMenu
+    position: absolute
+    top: 70px
+    right: -100%
+    height: 100% !important
+    transition: .3s
+    z-index: 999
+    background: rgba(0, 0, 0, 0.7)
+    .MainMenuHolder
+      height: 100%
+      .List .Item
+        background-image: url(../data/bg020000.png)
+        background-position: 0 0
+        background-repeat: repeat-x
+        &:last-child
+          background-image: url(../data/bg020000.png)
+    &.open
+      right: 0
+      margin-bottom: 0
+
+  .SiteName
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+  .hamburger-btn
+    right: 0
+    margin-left: 40px
 
   .SiteName > span
     display: none !important
@@ -519,3 +560,15 @@ input[type=file]
   .block3
     img
       width: 100%
+
+
+
+
+
+
+
+
+
+
+
+@import hamburger

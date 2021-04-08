@@ -1,0 +1,67 @@
+.hamburger-btn
+  width: 35px
+  height: 35px
+  padding: 5px
+  display: flex
+  align-items: center
+  justify-content: center
+  border: none
+  background: none
+  cursor: pointer
+  @media (min-width: 768px)
+    display: none
+  span
+    width: inherit
+    height: 5px
+    position: relative
+    background: #dc7c00
+    border-radius: 2.5px
+    transform: rotate(0deg)
+    transition: all 0.25s ease-in-out
+    &:before,
+    &:after 
+      content: ""
+      position: absolute
+      right: 0
+      width: inherit
+      height: inherit
+      background: inherit
+      border-radius: inherit
+      will-change: rotate
+      -webkit-transform: rotate(0deg)
+      transform: rotate(0deg)
+      -webkit-transition: all 0.5s ease
+      transition: all 0.5s ease
+
+    $indent: -12px
+    &:before 
+      top: $indent
+    &:after 
+      bottom: $indent
+  &:hover
+    background: none
+    border-radius: 0
+  &.active
+    background: none
+    border-radius: 0
+    span
+      background: transparent
+      background-clip: content-box
+      &:before 
+        transform: rotate(135deg)
+        top: 0
+        background: #dc7c00
+        width: 115%
+      &:after 
+        bottom: 0
+        transform: rotate(-135deg)
+        background: #dc7c00
+        width: 115%
+  
+
+
+
+
+  
+
+

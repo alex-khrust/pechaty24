@@ -62,10 +62,15 @@ type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
                      </div>
                     </div>
                     <div class="SiteName">
-	                     <a href="index.html"><img src="data/sitename.png" alt="Pechaty24.ru - Изготовление печатей" title="Печати и штампы - Главная" border="0" width="329" height="48"></a>	                	<br>
-                    <span>
-                    	Частное изготовление печатей и штампов                    </span>
-                    </div>
+                <a href="index.html"><img src="data/sitename.png" alt="Pechaty24.ru - Изготовление печатей"
+                    title="Печати и штампы - Главная" border="0" width="329" height="48" alt="логотип сайта" /></a>
+                <br />
+                <span>Частное изготовление печатей и штампов</span>
+                
+                <div class="hamburger-btn">
+                  <span></span>
+                </div>
+              </div>
                     <div class="PhoneNumber">
                     	<div class="PhoneStr">
                     		
@@ -334,6 +339,37 @@ if (!w.__utlWdgt ) {
         </div>
     </div>
   </div></div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+    // Скрипт для присвоения пункту меню класса актив при скролле
+      $('a[href^="#"]').on('click', function (e) {
+        e.preventDefault();
+        $(document).off("scroll");
+
+        var target = this.hash;
+        $target = $(target);
+        $('html, body').stop().animate({
+          'scrollTop': $target.offset().top
+        }, 500, 'swing', function () {
+          window.location.hash = target;
+          $(document).on("scroll", onScroll);
+        });
+      });
+      //menu hamburger
+      $(".hamburger-btn").click(function () {
+        $(this).toggleClass("active");
+        $(".MainMenu").toggleClass("open");
+        $("body").toggleClass("locked");
+      });
+      // $(".MainMenu").click(function () {
+      //   $(this).removeClass("active");
+      //   $(".hamburger-btn").removeClass("active");
+      //   $(".MainMenu").removeClass("open");
+      //   $("body").removeClass("locked");
+      // });
+      // ------------------------------
+    })
+  </script>
 </body>
 </html>
 

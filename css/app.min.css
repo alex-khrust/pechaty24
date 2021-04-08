@@ -1,5 +1,6 @@
 body {
   background: #fff;
+  overflow-x: hidden;
 }
 
 .Content {
@@ -96,13 +97,27 @@ input[type=file] {
   padding-left: 0 !important;
 }
 
+.btn {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 @media (max-width: 1000px) {
   .Header {
     height: auto;
-    padding: 10px 10px 15px;
+    padding: 10px;
     background: none;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
+    -webkit-box-shadow: 0 0 20px -5px #000;
+            box-shadow: 0 0 20px -5px #000;
   }
   .Header .HeaderHolder {
     height: auto;
@@ -125,7 +140,6 @@ input[type=file] {
     position: relative;
     left: unset;
     top: unset;
-    padding-right: 100px;
     margin-right: auto;
     margin-bottom: 15px;
     -webkit-box-ordinal-group: 2;
@@ -577,16 +591,64 @@ input[type=file] {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   h1,
   h2 {
     text-align: center;
   }
+  .locked {
+    overflow: hidden;
+  }
   .Header {
     max-height: unset;
+    padding: 10px;
+    margin-bottom: 25px;
+    -webkit-box-shadow: 0 0 20px -5px #000;
+            box-shadow: 0 0 20px -5px #000;
   }
   .Header .HeaderHolder {
     height: auto !important;
+  }
+  .MainMenu {
+    position: absolute;
+    top: 70px;
+    right: -100%;
+    height: 100% !important;
+    -webkit-transition: .3s;
+    transition: .3s;
+    z-index: 999;
+    background: rgba(0, 0, 0, 0.7);
+  }
+  .MainMenu .MainMenuHolder {
+    height: 100%;
+  }
+  .MainMenu .MainMenuHolder .List .Item {
+    background-image: url(../data/bg020000.png);
+    background-position: 0 0;
+    background-repeat: repeat-x;
+  }
+  .MainMenu .MainMenuHolder .List .Item:last-child {
+    background-image: url(../data/bg020000.png);
+  }
+  .MainMenu.open {
+    right: 0;
+    margin-bottom: 0;
+  }
+  .SiteName {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .hamburger-btn {
+    right: 0;
+    margin-left: 40px;
   }
   .SiteName > span {
     display: none !important;
@@ -730,4 +792,94 @@ input[type=file] {
   .block3 img {
     width: 100%;
   }
+}
+
+.hamburger-btn {
+  width: 35px;
+  height: 35px;
+  padding: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .hamburger-btn {
+    display: none;
+  }
+}
+
+.hamburger-btn span {
+  width: inherit;
+  height: 5px;
+  position: relative;
+  background: #dc7c00;
+  border-radius: 2.5px;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+.hamburger-btn span:before, .hamburger-btn span:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: inherit;
+  height: inherit;
+  background: inherit;
+  border-radius: inherit;
+  will-change: rotate;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.hamburger-btn span:before {
+  top: -12px;
+}
+
+.hamburger-btn span:after {
+  bottom: -12px;
+}
+
+.hamburger-btn:hover {
+  background: none;
+  border-radius: 0;
+}
+
+.hamburger-btn.active {
+  background: none;
+  border-radius: 0;
+}
+
+.hamburger-btn.active span {
+  background: transparent;
+  background-clip: content-box;
+}
+
+.hamburger-btn.active span:before {
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+  top: 0;
+  background: #dc7c00;
+  width: 115%;
+}
+
+.hamburger-btn.active span:after {
+  bottom: 0;
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+  background: #dc7c00;
+  width: 115%;
 }
