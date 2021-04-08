@@ -168,7 +168,7 @@ input[type=file]
     img
       width: auto !important
       height: auto
-      max-width: 200px
+      max-width: 200px !important
       object-fit: contain
     
   .leftpart img
@@ -349,6 +349,7 @@ input[type=file]
   
 
 @media ( max-width: 768px )
+
   h2
     text-align: center
 
@@ -437,7 +438,7 @@ input[type=file]
     input[type=text],
     textarea
       width: 100% !important
-      max-width: 100% !important
+      max-width: 100%
       box-sizing: border-box !important
 
 
@@ -455,3 +456,17 @@ input[type=file]
       width: auto
       max-width: 100%
       object-fit: contain
+
+  .order-panel
+    padding-bottom: 20px
+    .files-container
+      width: auto !important
+      height: auto
+      margin: 10px
+      display: flex
+      flex-flow: column
+      button
+        height: auto
+        min-height: 30px
+    img
+      margin: 0
