@@ -88,6 +88,10 @@ table.price {
   max-width: 600px;
 }
 
+input[type=file] {
+  padding-left: 0 !important;
+}
+
 @media (max-width: 1000px) {
   .Header {
     height: auto;
@@ -449,13 +453,15 @@ table.price {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
+    padding-bottom: 10px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding-bottom: 10px;
+    -ms-flex-flow: wrap;
+        flex-flow: wrap;
   }
   .FooterHolder .OrderBy br {
     display: none;
@@ -521,6 +527,12 @@ table.price {
 @media (max-width: 768px) {
   h2 {
     text-align: center;
+  }
+  .Header .HeaderHolder {
+    height: auto !important;
+  }
+  .SiteName > span {
+    display: none !important;
   }
   .MainPlBl .boxind {
     max-width: 500px;
@@ -598,5 +610,34 @@ table.price {
     width: 100%;
     top: 0 !important;
     margin-top: 30px !important;
+  }
+}
+
+@media (max-width: 450px) {
+  .Content div,
+  .Content table,
+  .Content form,
+  .Content input[type=text],
+  .Content textarea {
+    width: 100% !important;
+    max-width: 100% !important;
+    -webkit-box-sizing: border-box !important;
+            box-sizing: border-box !important;
+  }
+  .Content input[type=text],
+  .Content input[type=file],
+  .Content input[type=submit] {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 30px !important;
+  }
+  .Content input[type="file" i]::-webkit-file-upload-button {
+    padding: 6px 3px;
+  }
+  .Content img {
+    width: auto;
+    max-width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
 }
