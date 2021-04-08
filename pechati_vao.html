@@ -296,37 +296,7 @@ if (!w.__utlWdgt ) {
 (function(){ var widget_id = 'bMIGrQz2QF';var d=document;var w=window;function l(){var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
 </script>
 <!-- {/literal} END JIVOSITE CODE -->
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-    // Скрипт для присвоения пункту меню класса актив при скролле
-      $('a[href^="#"]').on('click', function (e) {
-        e.preventDefault();
-        $(document).off("scroll");
-
-        var target = this.hash;
-        $target = $(target);
-        $('html, body').stop().animate({
-          'scrollTop': $target.offset().top
-        }, 500, 'swing', function () {
-          window.location.hash = target;
-          $(document).on("scroll", onScroll);
-        });
-      });
-      //menu hamburger
-      $(".hamburger-btn").click(function () {
-        $(this).toggleClass("active");
-        $(".MainMenu").toggleClass("open");
-        $("body").toggleClass("locked");
-      });
-      // $(".MainMenu").click(function () {
-      //   $(this).removeClass("active");
-      //   $(".hamburger-btn").removeClass("active");
-      //   $(".MainMenu").removeClass("open");
-      //   $("body").removeClass("locked");
-      // });
-      // ------------------------------
-    })
-  </script>
+  <script src="js/app.js"></script>
 </body>
 </html>
 

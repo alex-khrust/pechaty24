@@ -35,37 +35,7 @@ if (mail($address, $sub, $mes, $from)) {
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />  <link rel="stylesheet" href="../css/app.min.css" />
 </head>
-    <body>Письмо отправлено  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-    // Скрипт для присвоения пункту меню класса актив при скролле
-      $('a[href^="#"]').on('click', function (e) {
-        e.preventDefault();
-        $(document).off("scroll");
-
-        var target = this.hash;
-        $target = $(target);
-        $('html, body').stop().animate({
-          'scrollTop': $target.offset().top
-        }, 500, 'swing', function () {
-          window.location.hash = target;
-          $(document).on("scroll", onScroll);
-        });
-      });
-      //menu hamburger
-      $(".hamburger-btn").click(function () {
-        $(this).toggleClass("active");
-        $(".MainMenu").toggleClass("open");
-        $("body").toggleClass("locked");
-      });
-      // $(".MainMenu").click(function () {
-      //   $(this).removeClass("active");
-      //   $(".hamburger-btn").removeClass("active");
-      //   $(".MainMenu").removeClass("open");
-      //   $("body").removeClass("locked");
-      // });
-      // ------------------------------
-    })
-  </script>
+    <body>Письмо отправлено  <script src="js/app.js"></script>
 </body>';}
 else {
   header('Refresh: 5; URL=http://www.pechaty24.ru');
@@ -73,37 +43,7 @@ else {
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />  <link rel="stylesheet" href="../css/app.min.css" />
 </head>
-    <body>Письмо не отправлено, через 5 секунд вы вернетесь на страницу YYY  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-    // Скрипт для присвоения пункту меню класса актив при скролле
-      $('a[href^="#"]').on('click', function (e) {
-        e.preventDefault();
-        $(document).off("scroll");
-
-        var target = this.hash;
-        $target = $(target);
-        $('html, body').stop().animate({
-          'scrollTop': $target.offset().top
-        }, 500, 'swing', function () {
-          window.location.hash = target;
-          $(document).on("scroll", onScroll);
-        });
-      });
-      //menu hamburger
-      $(".hamburger-btn").click(function () {
-        $(this).toggleClass("active");
-        $(".MainMenu").toggleClass("open");
-        $("body").toggleClass("locked");
-      });
-      // $(".MainMenu").click(function () {
-      //   $(this).removeClass("active");
-      //   $(".hamburger-btn").removeClass("active");
-      //   $(".MainMenu").removeClass("open");
-      //   $("body").removeClass("locked");
-      // });
-      // ------------------------------
-    })
-  </script>
+    <body>Письмо не отправлено, через 5 секунд вы вернетесь на страницу YYY  <script src="js/app.js"></script>
 </body>';}
 }
 exit; /* Выход без сообщения, если поле bezspama чем-то заполнено */
