@@ -230,7 +230,7 @@ a, button, .btn, .hamburger-btn {
     height: auto !important;
     max-height: 48px !important;
   }
-  .Header .HeaderHolder .SiteName span {
+  .Header .HeaderHolder .SiteName > span {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1058,6 +1058,7 @@ a, button, .btn, .hamburger-btn {
 .hamburger-btn span {
   width: inherit;
   height: 5px;
+  padding: 0 !important;
   position: relative;
   background: #dc7c00;
   border-radius: 2.5px;
