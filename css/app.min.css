@@ -311,7 +311,7 @@ a, button, .btn, .hamburger-btn {
     max-height: 480px;
     margin-bottom: 4%;
   }
-  .MainPlBl .z2 {
+  .MainPlBl > .z2 {
     width: 100%;
     max-width: 100%;
   }
