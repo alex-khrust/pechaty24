@@ -315,6 +315,28 @@ a, button, .btn, .hamburger-btn {
     width: 100%;
     max-width: 100%;
   }
+  .MainPlBl > center {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .MainPlBl > center a {
+    padding: 5px;
+  }
+  .MainPlBl > img {
+    max-width: 50%;
+    padding: 0 5px;
+    margin: 0 auto 25px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
   .formazakaza {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -361,7 +383,7 @@ a, button, .btn, .hamburger-btn {
   .zakazott .bodyzakaz .rightpart,
   .zakazstamp .bodyzakaz .leftpart,
   .zakazstamp .bodyzakaz .rightpart {
-    max-width: unset;
+    max-width: 50%;
   }
   .zakaznov .bodyzakaz .leftpart img,
   .zakaznov .bodyzakaz .rightpart img,
@@ -374,6 +396,33 @@ a, button, .btn, .hamburger-btn {
     max-height: 300px;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  .zakaznov {
+    min-width: 90%;
+    max-width: unset;
+  }
+  .zakaznov .bodyzakaz {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+  }
+  .zakaznov .leftpart,
+  .zakaznov .rightpart {
+    width: 100%;
+    max-width: 100% !important;
+    margin: 10px 0;
+  }
+  .zakaznov .leftpart img,
+  .zakaznov .rightpart img {
+    -o-object-fit: contain !important;
+       object-fit: contain !important;
+  }
+  .zakaznov .contact_form {
+    padding-left: 10px;
+  }
+  .zakaznov .contact_form textarea {
+    min-height: 100px !important;
   }
   .bodyzakaz {
     width: 100% !important;
@@ -701,6 +750,10 @@ a, button, .btn, .hamburger-btn {
   .tariffs3 .spanred {
     border-bottom: 3px solid maroon;
   }
+  .price2 + p {
+    width: 100%;
+    text-align: center;
+  }
   @-webkit-keyframes to-left {
     0% {
       bottom: 0;
@@ -883,6 +936,10 @@ a, button, .btn, .hamburger-btn {
         -ms-flex-flow: row wrap;
             flex-flow: row wrap;
   }
+  .formazakaza .bodyzakaz .leftpart,
+  .formazakaza .bodyzakaz .rightpart {
+    max-width: unset;
+  }
   .formazakaza .bodyzakaz > a {
     width: 100%;
   }
@@ -919,6 +976,7 @@ a, button, .btn, .hamburger-btn {
     width: auto !important;
     height: auto !important;
   }
+  textarea,
   input[type=text],
   input[type=file],
   input[type=name],
@@ -958,6 +1016,26 @@ a, button, .btn, .hamburger-btn {
   .w60 {
     max-width: 100% !important;
   }
+  .zakaznov .bodyzakaz {
+    -ms-flex-flow: wrap;
+        flex-flow: wrap;
+  }
+  .zakaznov .leftpart {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .zakaznov .leftpart .lefttop,
+  .zakaznov .leftpart .leftdown {
+    padding-bottom: 15px;
+  }
+  .zakaznov .leftpart .leftdown {
+    border-right: none;
+    border-bottom: 1px dashed orange;
+  }
+  .zakaznov img {
+    max-height: 150px !important;
+  }
 }
 
 @media (max-width: 450px) {
@@ -978,6 +1056,11 @@ a, button, .btn, .hamburger-btn {
     -o-object-fit: contain;
        object-fit: contain;
   }
+  .MainPlBl > img {
+    width: 100%;
+    max-width: 50%;
+  }
+  textarea,
   input[type=text],
   input[type=file],
   input[type=name],
@@ -1028,6 +1111,9 @@ a, button, .btn, .hamburger-btn {
   .bodyzakaz .wblock {
     -ms-flex-flow: wrap;
         flex-flow: wrap;
+  }
+  .zakaznov .leftpart img {
+    max-height: 100px !important;
   }
 }
 

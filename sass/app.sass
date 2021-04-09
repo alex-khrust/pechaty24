@@ -235,6 +235,22 @@ a, button, .btn, .hamburger-btn
       width: 100%
       max-width: 100%
 
+    &>center
+      width: 100%
+      display: flex
+      align-items: center
+      justify-content: center
+      a
+        padding: 5px
+
+    &>img
+      max-width: 50%
+      padding: 0 5px
+      margin: 0 auto 25px
+      object-fit: contain
+
+
+
   .formazakaza
     display: flex
     flex-flow: wrap
@@ -264,12 +280,31 @@ a, button, .btn, .hamburger-btn
       box-sizing: border-box
       .leftpart,
       .rightpart
-        max-width: unset
+        max-width: 50%
         img
           width: 100%
           height: 100% !important
           max-height: 300px
           object-fit: cover
+  
+  .zakaznov
+    min-width: 90%
+    max-width: unset
+    .bodyzakaz
+      flex-flow: row
+    .leftpart,
+    .rightpart
+      width: 100%
+      max-width: 100% !important
+      margin: 10px 0
+      img
+        object-fit: contain !important
+    .contact_form
+      padding-left: 10px
+      textarea
+        min-height: 100px !important
+        
+
 
   .bodyzakaz
     width: 100% !important
@@ -476,6 +511,12 @@ a, button, .btn, .hamburger-btn
       border-bottom: 3px solid maroon
 
 
+  .price2+p
+    width: 100%
+    text-align: center
+
+
+
 
 
   @keyframes to-left
@@ -608,6 +649,9 @@ a, button, .btn, .hamburger-btn
       width: 100% !important
     .bodyzakaz
       flex-flow: row wrap
+      .leftpart,
+      .rightpart
+        max-width: unset
       &>a
         width: 100%
     .zakaznov, 
@@ -636,6 +680,7 @@ a, button, .btn, .hamburger-btn
     div
       width: auto !important
       height: auto !important
+  textarea,
   input[type=text],
   input[type=file],
   input[type=name],
@@ -672,6 +717,22 @@ a, button, .btn, .hamburger-btn
     max-width: 100% !important
 
 
+
+  .zakaznov
+    .bodyzakaz
+      flex-flow: wrap
+    .leftpart
+      display: flex
+      .lefttop,
+      .leftdown
+        padding-bottom: 15px
+      .leftdown
+        border-right: none
+        border-bottom: 1px dashed orange
+    img
+      max-height: 150px !important
+
+
 @media ( max-width: 450px )
   .Content 
     div,
@@ -689,6 +750,11 @@ a, button, .btn, .hamburger-btn
       max-width: 100%
       object-fit: contain
 
+  .MainPlBl
+    &>img
+      width: 100%
+      max-width: 50%
+  textarea,
   input[type=text],
   input[type=file],
   input[type=name],
@@ -734,6 +800,13 @@ a, button, .btn, .hamburger-btn
   .bodyzakaz 
     .wblock
       flex-flow: wrap
+
+
+  .zakaznov
+    .bodyzakaz
+    .leftpart
+      img
+        max-height: 100px !important
 
 
 
