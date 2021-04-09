@@ -308,6 +308,8 @@ a, button, .btn, .hamburger-btn
     max-width: 500px
 
   .step-2
+    min-height: unset
+    margin-bottom: 0 auto 26px
     .w60
       display: flex
       align-items: center
@@ -349,10 +351,14 @@ a, button, .btn, .hamburger-btn
       flex-flow: wrap
       align-items: baseline
       justify-content: center
+      div:not(.ottiskpr)
+        display: none
       .ottiskpr
         width: auto
-        padding: 0 10px
+        max-width: 50%
+        padding: 0 5px
         margin: 15px 0
+        box-sizing: border-box
         img
           width: 100%
           height: auto
@@ -438,6 +444,33 @@ a, button, .btn, .hamburger-btn
         display: none
 
 
+  .tariffs,
+  .tariffs2,
+  .tariffs3
+    display: flex
+    flex-flow: wrap
+    justify-content: space-evenly
+    gap: 10px
+    &>div
+      height: auto
+      display: flex
+      flex-flow: column
+      justify-content: space-between
+      .btn
+        margin-bottom: 0
+    .spanoran,
+    .spanred
+      padding: 0 0 5px
+      display: flex
+      align-items: center
+      justify-content: center
+      border-left: none
+      border-bottom: 3px solid orange
+      font-size: 18px
+    .spanred
+      border-bottom: 3px solid maroon
+
+
 
 
   @keyframes to-left
@@ -473,6 +506,9 @@ a, button, .btn, .hamburger-btn
 
   .locked
     overflow: hidden
+
+  .w50>img
+    margin: 20px auto 0
 
   .Header
     max-height: unset
@@ -561,6 +597,8 @@ a, button, .btn, .hamburger-btn
   //       width: 100%
 
   .formazakaza
+    &>div
+      width: 100% !important
     .bodyzakaz
       flex-flow: row wrap
     .zakaznov, 
@@ -585,9 +623,45 @@ a, button, .btn, .hamburger-btn
 
 
 
+  form
+    div
+      width: auto !important
+      height: auto !important
+  input[type=text],
+  input[type=file],
+  input[type=name],
+  input[type=email],
+  input[type=tel],
+  input[type=file],
+  input[type=submit],
+  input[type=button],
+  button[type=submit],
+    width: 100% !important
+    max-width: 400px
+    height: auto !important
+    min-height: 30px !important
+    box-sizing: border-box
+  input[type=submit],
+  input[type=button],
+  button[type=submit]
+    min-height: 40px !important
+    margin-top: 30px !important
+  input[type=button]
+    margin-top: 15px !important
 
 
+  .btn 
+    margin-top: 15px
+    span
+      min-height: 40px !important
+      box-sizing: border-box
 
+  input[type="file" i]::-webkit-file-upload-button
+      padding: 6px 3px
+
+
+  .w60
+    max-width: 100% !important
 
 
 @media ( max-width: 450px )
@@ -602,34 +676,21 @@ a, button, .btn, .hamburger-btn
       max-width: 100%
       box-sizing: border-box !important
 
-
-    input[type=text],
-    input[type=name],
-    input[type=email],
-    input[type=tel],
-    input[type=file],
-    input[type=submit]
-      width: 100% !important
-      height: auto !important
-      min-height: 30px !important
-      box-sizing: border-box
-
-    input[type="file" i]::-webkit-file-upload-button
-      padding: 6px 3px
-
-    input[type=submit]
-      margin-top: 30px
-      min-height: 40px !important
-    .btn 
-      margin-top: 15px
-      span
-        min-height: 40px !important
-        box-sizing: border-box
-
     img
       width: auto
       max-width: 100%
       object-fit: contain
+
+  input[type=text],
+  input[type=file],
+  input[type=name],
+  input[type=email],
+  input[type=tel],
+  input[type=file],
+  input[type=submit],
+  input[type=button],
+  button[type=submit],
+    max-width: 100%
 
   .order-panel
     padding-bottom: 20px
@@ -653,36 +714,6 @@ a, button, .btn, .hamburger-btn
     img
       width: 100%
 
-
-
-  form
-    div
-      width: auto !important
-      height: auto !important
-    input[type=text],
-    input[type=file],
-    input[type=submit],
-    button[type=submit]
-      width: 100% !important
-      height: auto !important
-      min-height: 30px !important
-    input[type=submit],
-    button[type=submit]
-      min-height: 40px !important
-
-
-  .tariffs2
-    .spanoran,
-    .spanred
-      padding: 0 0 5px
-      display: flex
-      align-items: center
-      justify-content: center
-      border-left: none
-      border-bottom: 3px solid orange
-      font-size: 18px
-    .spanred
-      border-bottom: 3px solid maroon
 
   .zakaznov .bodyzakaz .leftpart, 
   .zakaznov .bodyzakaz .rightpart 
