@@ -204,6 +204,21 @@ a, button, .btn, .hamburger-btn
       display: flex
       justify-content: center
 
+    .objsel
+      width: auto
+      max-width: 50%
+      margin: 0 auto
+      box-sizing: border-box
+      img
+        width: 100%
+        max-width: 200px
+        padding: 5px
+  .krug+p
+    width: 100%
+    text-align: center
+
+
+
   .MainPlBl
 
     display: flex
@@ -451,7 +466,9 @@ a, button, .btn, .hamburger-btn
 @media ( max-width: 767px )
 
   h1,
-  h2
+  h2,
+  h3
+    width: 100%
     text-align: center
 
   .locked
@@ -498,8 +515,12 @@ a, button, .btn, .hamburger-btn
   .SiteName > span
     display: none !important
 
-  .MainPlBl .boxind
-    max-width: 500px
+  .MainPlBl 
+    .boxind
+      max-width: 500px
+    &>hr
+      display: none
+
 
   .MainMenu
     width: 100%

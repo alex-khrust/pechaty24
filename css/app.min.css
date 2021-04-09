@@ -278,6 +278,22 @@ a, button, .btn, .hamburger-btn {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .Content .objsel {
+    width: auto;
+    max-width: 50%;
+    margin: 0 auto;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .Content .objsel img {
+    width: 100%;
+    max-width: 200px;
+    padding: 5px;
+  }
+  .krug + p {
+    width: 100%;
+    text-align: center;
+  }
   .MainPlBl {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -665,7 +681,9 @@ a, button, .btn, .hamburger-btn {
 
 @media (max-width: 767px) {
   h1,
-  h2 {
+  h2,
+  h3 {
+    width: 100%;
     text-align: center;
   }
   .locked {
@@ -727,6 +745,9 @@ a, button, .btn, .hamburger-btn {
   }
   .MainPlBl .boxind {
     max-width: 500px;
+  }
+  .MainPlBl > hr {
+    display: none;
   }
   .MainMenu {
     width: 100%;
