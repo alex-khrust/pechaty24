@@ -1,5 +1,19 @@
 document.addEventListener("DOMContentLoaded", function () {
-// Скрипт для присвоения пункту меню класса актив при скролле
+  
+  //menu hamburger
+  $(".hamburger-btn").click(function () {
+    $(this).toggleClass("active");
+    $(".MainMenu").toggleClass("open");
+    $("body").toggleClass("locked");
+  });
+  // $(".MainMenu").click(function () {
+  //   $(this).removeClass("active");
+  //   $(".hamburger-btn").removeClass("active");
+  //   $(".MainMenu").removeClass("open");
+  //   $("body").removeClass("locked");
+  // });
+  // ------------------------------
+  // Скрипт для присвоения пункту меню класса актив при скролле
   $('a[href^="#"]').on('click', function (e) {
     e.preventDefault();
     $(document).off("scroll");
@@ -13,17 +27,5 @@ document.addEventListener("DOMContentLoaded", function () {
       $(document).on("scroll", onScroll);
     });
   });
-  //menu hamburger
-  $(".hamburger-btn").click(function () {
-    $(this).toggleClass("active");
-    $(".MainMenu").toggleClass("open");
-    $("body").toggleClass("locked");
-  });
-  // $(".MainMenu").click(function () {
-  //   $(this).removeClass("active");
-  //   $(".hamburger-btn").removeClass("active");
-  //   $(".MainMenu").removeClass("open");
-  //   $("body").removeClass("locked");
-  // });
   // ------------------------------
 })

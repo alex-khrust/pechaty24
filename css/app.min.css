@@ -353,7 +353,9 @@ a, button, .btn, .hamburger-btn {
   .zakazott .bodyzakaz .rightpart img,
   .zakazstamp .bodyzakaz .leftpart img,
   .zakazstamp .bodyzakaz .rightpart img {
-    height: 300px;
+    width: auto;
+    height: auto;
+    max-height: 300px;
     -o-object-fit: cover;
        object-fit: cover;
   }
@@ -815,17 +817,31 @@ a, button, .btn, .hamburger-btn {
             box-sizing: border-box !important;
   }
   .Content input[type=text],
+  .Content input[type=name],
+  .Content input[type=email],
+  .Content input[type=tel],
   .Content input[type=file],
   .Content input[type=submit] {
     width: 100% !important;
     height: auto !important;
     min-height: 30px !important;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
   .Content input[type="file" i]::-webkit-file-upload-button {
     padding: 6px 3px;
   }
   .Content input[type=submit] {
     margin-top: 30px;
+    min-height: 40px !important;
+  }
+  .Content .btn {
+    margin-top: 15px;
+  }
+  .Content .btn span {
+    min-height: 40px !important;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
   .Content img {
     width: auto;
@@ -850,7 +866,7 @@ a, button, .btn, .hamburger-btn {
   }
   .order-panel .files-container button {
     height: auto;
-    min-height: 30px;
+    min-height: 40px;
   }
   .order-panel img {
     margin: 0;
@@ -868,10 +884,38 @@ a, button, .btn, .hamburger-btn {
   }
   form input[type=text],
   form input[type=file],
-  form input[type=submit] {
+  form input[type=submit],
+  form button[type=submit] {
     width: 100% !important;
     height: auto !important;
     min-height: 30px !important;
+  }
+  form input[type=submit],
+  form button[type=submit] {
+    min-height: 40px !important;
+  }
+  .tariffs2 .spanoran,
+  .tariffs2 .spanred {
+    padding: 0 0 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-left: none;
+    border-bottom: 3px solid orange;
+    font-size: 18px;
+  }
+  .tariffs2 .spanred {
+    border-bottom: 3px solid maroon;
+  }
+  .zakaznov .bodyzakaz .leftpart img,
+  .zakaznov .bodyzakaz .rightpart img {
+    height: auto;
   }
 }
 

@@ -251,7 +251,9 @@ a, button, .btn, .hamburger-btn
       .rightpart
         max-width: unset
         img
-          height: 300px
+          width: auto
+          height: auto
+          max-height: 300px
           object-fit: cover
 
   .bodyzakaz
@@ -581,17 +583,27 @@ a, button, .btn, .hamburger-btn
 
 
     input[type=text],
+    input[type=name],
+    input[type=email],
+    input[type=tel],
     input[type=file],
     input[type=submit]
       width: 100% !important
       height: auto !important
       min-height: 30px !important
+      box-sizing: border-box
 
     input[type="file" i]::-webkit-file-upload-button
       padding: 6px 3px
 
     input[type=submit]
       margin-top: 30px
+      min-height: 40px !important
+    .btn 
+      margin-top: 15px
+      span
+        min-height: 40px !important
+        box-sizing: border-box
 
     img
       width: auto
@@ -608,7 +620,7 @@ a, button, .btn, .hamburger-btn
       flex-flow: column
       button
         height: auto
-        min-height: 30px
+        min-height: 40px
     img
       margin: 0
 
@@ -628,11 +640,34 @@ a, button, .btn, .hamburger-btn
       height: auto !important
     input[type=text],
     input[type=file],
-    input[type=submit]
+    input[type=submit],
+    button[type=submit]
       width: 100% !important
       height: auto !important
       min-height: 30px !important
-    
+    input[type=submit],
+    button[type=submit]
+      min-height: 40px !important
+
+
+  .tariffs2
+    .spanoran,
+    .spanred
+      padding: 0 0 5px
+      display: flex
+      align-items: center
+      justify-content: center
+      border-left: none
+      border-bottom: 3px solid orange
+      font-size: 18px
+    .spanred
+      border-bottom: 3px solid maroon
+
+  .zakaznov .bodyzakaz .leftpart, 
+  .zakaznov .bodyzakaz .rightpart 
+    img
+      height: auto
+
 
 
 
