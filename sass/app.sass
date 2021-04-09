@@ -232,7 +232,7 @@ a, button, .btn, .hamburger-btn
       max-height: 480px
       margin-bottom: 4%
     .z2
-      width: auto
+      width: 100%
       max-width: 100%
 
   .formazakaza
@@ -266,19 +266,24 @@ a, button, .btn, .hamburger-btn
       .rightpart
         max-width: unset
         img
-          width: auto
-          height: auto
+          width: 100%
+          height: 100% !important
           max-height: 300px
           object-fit: cover
 
   .bodyzakaz
-    width: 100%
+    width: 100% !important
     height: auto !important
     max-height: 320px
     display: flex
     align-items: center
     justify-content: space-evenly
     flex-flow: wrap
+    .wblock
+      display: flex
+      align-items: center
+      justify-content: space-evenly
+      gap: 0 10px
 
     img
       width: auto !important
@@ -589,6 +594,8 @@ a, button, .btn, .hamburger-btn
   .bodyzakaz
     max-height: unset
     flex-flow: column
+    .wblock
+      width: 100% !important
 
   // .order-panel
   //   .bodyzakaz
@@ -601,6 +608,8 @@ a, button, .btn, .hamburger-btn
       width: 100% !important
     .bodyzakaz
       flex-flow: row wrap
+      &>a
+        width: 100%
     .zakaznov, 
     .zakazott, 
     .zakazstamp
@@ -659,7 +668,6 @@ a, button, .btn, .hamburger-btn
   input[type="file" i]::-webkit-file-upload-button
       padding: 6px 3px
 
-
   .w60
     max-width: 100% !important
 
@@ -692,6 +700,9 @@ a, button, .btn, .hamburger-btn
   button[type=submit],
     max-width: 100%
 
+  .select-button
+    margin: 20px 0
+
   .order-panel
     padding-bottom: 20px
     .files-container
@@ -720,9 +731,9 @@ a, button, .btn, .hamburger-btn
     img
       height: auto
 
-
-
-
+  .bodyzakaz 
+    .wblock
+      flex-flow: wrap
 
 
 
