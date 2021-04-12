@@ -2,6 +2,8 @@
 // ::after,
 // ::before
 //   box-sizing: border-box
+jdiv
+  z-index: 111 !important
 
 body
   width: 100%
@@ -33,6 +35,28 @@ img
 .w60
   width: 100%
   max-width: 60%
+
+a
+  // text-decoration: none
+  transition: .3s
+  &:hover
+    color: #d27000
+
+.Header
+  a
+    color: #d27000
+    text-decoration: none
+    transition: .3s
+    &:hover
+      color: #212121 !important
+  .HeaderHolder .Contacts .Message a
+    font-size: large
+
+.production-stamps
+  height: 320px !important
+
+.production-facsimile
+  height: 300px !important
 
 .files-container
   width: 100%
@@ -128,14 +152,151 @@ div.tbForm
       background: #fff
       border: 1px solid #B6B6B6
       border-radius: 15px
+    .pr
+      margin-left: auto
+      margin-right: auto
+      .div_file
+        max-height: 30px
+        display: flex
+        align-items: center
+        justify-content: center
+      input
+        width: 100%
+        margin-top: 15px !important
+        box-sizing: border-box
+  textarea
+    min-height: 100px !important
 
 .wrap_1ba2 
   z-index: 111 !important
 
 a, button, .btn, .hamburger-btn
   -webkit-tap-highlight-color: transparent
+  box-sizing: border-box
+
+.progress-box
+  width: 100% !important
+  max-width: 500px !important
+  margin: auto
+  text-align: center
+  box-sizing: border-box
+
+.production-stamps
+  img
+    box-sizing: content-box
+
+.zakaznov--100
+  max-width: 100% !important
+
+
+.knopka,
+input[type=submit],
+input[type=button],
+button[type=submit]
+  height: 40px
+  min-width: 100px
+  margin-bottom: 20px
+  padding-left: 20px
+  padding-right: 20px
+  background-color: #e67e22
+  font: bold 16px arial
+  color: white
+  cursor: pointer
+
+.block4
+  background: none
+
+.block1,
+.block5
+  height: auto !important
+  .tariffs3
+    height: auto !important
+    width: auto
+    display: flex
+    align-items: center
+    justify-content: center
+    &>div
+      width: 100% !important
+      height: auto !important
+      max-width: 700px !important
+      height: auto !important
+      // display: flex
+      // align-items: center
+      // justify-content: center
+      // flex-flow: row wrap
+
+.check
+  display: flex
+  flex-flow: wrap
+  align-items: center
+  justify-content: center
+  box-sizing: border-box
+  input[type=text],
+  input[type=button]
+    min-height: 40px
+    padding: 10px
+    margin: 10px !important
+    box-sizing: border-box
+
+.priceakcii
+  width: 100%
+  display: flex
+  flex-flow: wrap
+  justify-content: center
+  align-items: center
+  p
+    width: 100%
+  img
+    width: 200px !important
+    max-height: 200px !important
+    margin-bottom: 10px !important
+    object-fit: contain !important
+  span
+    width: 100%
+    margin-bottom: 5px
+
+.contact_form
+  width: 100%
+  height: 100%
+  max-width: 400px
+  margin: 0 auto
+  padding: 0 10px
+  display: flex
+  flex-flow: column
+  align-items: center
+  justify-content: center
+  box-sizing: border-box
+  #selosnnov2
+    height: 30px
+    margin-bottom: 10px
+    text-align: center
+    text-transform: uppercase
+    font-size: 18px
+  p
+    width: 100%
+    margin-top: 0
+    margin-bottom: 3px
+  textarea
+    // min-height: 120px !important
+  textarea,
+  input[type=text],
+  input[type=file],
+  input[type=name],
+  input[type=email],
+  input[type=tel]
+    width: 100%
+    box-sizing: border-box
+  input[type=submit],
+  button[type=submit]
+    width: 100%
+    margin-top: 5px
+    margin-bottom: 10px
+    box-sizing: border-box
 
 @media ( max-width: 1000px )
+  
+  h2
+    margin-top: 20px
 
   .Header
     height: auto
@@ -218,9 +379,13 @@ a, button, .btn, .hamburger-btn
     text-align: center
 
 
+  .breadcrumbs
+    margin: 0 auto 25px 0
+    ol
+      padding: 0
+
 
   .MainPlBl
-
     display: flex
     flex-flow: wrap
     justify-content: center
@@ -249,6 +414,34 @@ a, button, .btn, .hamburger-btn
       margin: 0 auto 25px
       object-fit: contain
 
+    &>span
+      width: 100%
+      margin: 25px 0
+      text-align: center
+      display: flex
+      align-items: center
+      justify-content: center
+    
+    &>font
+      display: flex
+      flex-flow: column
+      &+.ItEl
+        width: 150px
+        padding: 5px
+        margin: 5px auto
+        display: flex
+        align-items: center
+        justify-content: center
+        box-sizing: border-box
+    .ItEl
+      width: 150px
+      padding: 5px
+      margin: 5px auto
+      display: flex
+      align-items: center
+      justify-content: center
+      box-sizing: border-box
+
 
 
   .formazakaza
@@ -262,6 +455,12 @@ a, button, .btn, .hamburger-btn
       &:nth-of-type(3)
         margin-bottom: 20px
 
+    .zakaznov, 
+    .zakazott, 
+    .zakazstamp
+      margin-left: 0
+      margin-bottom: 7px
+
   .order-panel
     width: 100%
     max-width: 465px
@@ -274,37 +473,55 @@ a, button, .btn, .hamburger-btn
     width: 100%
     max-width: 480px
     .bodyzakaz
-      min-height: 300px !important
+      // min-height: 300px !important
       max-height: unset !important
-      padding: 0 10px
       box-sizing: border-box
-      .leftpart,
-      .rightpart
+      &+.leftpart,
+      &+.rightpart
         max-width: 50%
         img
           width: 100%
           height: 100% !important
-          max-height: 300px
+          max-height: 225px
           object-fit: cover
-  
-  .zakaznov
-    min-width: 90%
-    max-width: unset
-    .bodyzakaz
-      flex-flow: row
+
+  .zakazstamp
+    max-width: 100%
+    padding: 0
+
+  .zakazott
     .leftpart,
     .rightpart
-      width: 100%
-      max-width: 100% !important
-      margin: 10px 0
+      width: 100% !important
+      max-width: 50% !important
+  
+  .zakaznov
+    .bodyzakaz
+      padding: 0
+      flex-flow: wrap
+    .leftpart,
+    .rightpart
+      width: 100% !important
+      max-width: 50% !important
+      // margin: 10px 0
+      display: flex
+      justify-content: center
+      align-items: center
+      flex-flow: column
       img
         object-fit: contain !important
-    .contact_form
-      padding-left: 10px
-      textarea
-        min-height: 100px !important
-        
 
+  .zakaznov--makets
+    width: 100%
+    max-width: 900px
+    .bodyzakaz
+      flex-flow: wrap
+      padding: 0
+    .leftpart,
+    .rightpart
+      flex-flow: wrap
+      .priceakcii
+        width: 100%
 
   .bodyzakaz
     width: 100% !important
@@ -322,8 +539,9 @@ a, button, .btn, .hamburger-btn
 
     img
       width: auto !important
-      height: auto
+      height: 100%
       max-width: 200px !important
+      max-height: 225px !important
       object-fit: contain
     
   .leftpart img
@@ -335,7 +553,46 @@ a, button, .btn, .hamburger-btn
     max-width: 50%
     & + .knopka
       width: 100%
+      max-width: 50%
+      min-width: 280px
       margin: 0 auto
+
+  .upside
+    width: 100%
+    h2
+      margin-top: 10px
+    &>div
+      width: 100% !important
+      margin: 0 !important
+      display: flex
+      align-items: center
+      justify-content: center
+      flex-flow: wrap
+      img
+        max-width: 300px !important
+      p
+        margin: 5px
+        max-width: 200px
+    img
+      width: 100% !important
+      max-width: 250px !important
+      height: auto !important
+      margin: 10px 0 5px
+  .downside
+    width: 100%
+
+  .priceakcii
+    display: flex
+    flex-flow: wrap
+    justify-content: center
+    align-items: center
+    p
+      width: 100%
+    img
+      width: 200px !important
+      max-height: 200px !important
+      margin-bottom: 10px !important
+
 
   .icdos,
   .icgar,
@@ -349,11 +606,11 @@ a, button, .btn, .hamburger-btn
 
   .step-2
     min-height: unset
-    margin-bottom: 0 auto 26px
+    margin: 0 auto 26px
     .w60
       display: flex
       align-items: center
-      justify-content: center
+      justify-content: space-evenly
       flex-flow: wrap
     .osn-image
       width: auto
@@ -379,6 +636,8 @@ a, button, .btn, .hamburger-btn
       textarea,
       div
         width: 100% !important
+      textarea
+        min-height: 120px !important
       *,
       ::after,
       ::before
@@ -516,7 +775,49 @@ a, button, .btn, .hamburger-btn
     text-align: center
 
 
+  table.osn
+    width: 100%
+    tr
+      display: flex
+      
+    td.osn
+      width: 100%
+      max-width: 200px
+      text-align: center
+      border-collapse: collapse
+      border: 1px dotted #ccc
+      display: flex
+      flex-flow: column
+      align-items: center
+      justify-content: space-between
+      padding: 10px 5px
+      img
+        width: 100%
+        height: 100%
+        max-height: 150px
+        object-fit: contain
 
+  .block1,
+  .block5
+    .tariffs3
+      &>div
+        display: flex
+        align-items: center
+        justify-content: center
+        flex-flow: row wrap
+  .block4
+    p+table
+      width: 100%
+      tr
+        width: 100%
+        display: flex
+        flex-flow: wrap
+        align-items: baseline
+        justify-content: center
+    .rot_img_cont
+      width: 100% !important
+      max-width: 250px !important
+      margin: 5px auto
 
 
   @keyframes to-left
@@ -634,7 +935,7 @@ a, button, .btn, .hamburger-btn
 
   .bodyzakaz
     max-height: unset
-    flex-flow: column
+    flex-flow: wrap
     .wblock
       width: 100% !important
 
@@ -648,19 +949,12 @@ a, button, .btn, .hamburger-btn
     &>div
       width: 100% !important
     .bodyzakaz
-      flex-flow: row wrap
-      .leftpart,
-      .rightpart
-        max-width: unset
       &>a
         width: 100%
-    .zakaznov, 
-    .zakazott, 
-    .zakazstamp
-      margin-left: 0
-      margin-bottom: 7px
 
   .total-block
+    margin: 0 !important
+    padding: 10px 0
     width: auto
     display: flex
     align-items: baseline
@@ -671,7 +965,6 @@ a, button, .btn, .hamburger-btn
       margin-right: 0
     .select-button
       width: 100%
-      top: 0 !important
       margin-top: 30px !important
 
 
@@ -694,7 +987,7 @@ a, button, .btn, .hamburger-btn
     max-width: 400px
     height: auto !important
     min-height: 30px !important
-    box-sizing: border-box
+    box-sizing: border-box !important
   input[type=submit],
   input[type=button],
   button[type=submit]
@@ -720,17 +1013,41 @@ a, button, .btn, .hamburger-btn
 
   .zakaznov
     .bodyzakaz
-      flex-flow: wrap
+      // flex-flow: row
+    .leftpart,
+    .rightpart
+      // max-width: 100% !important
     .leftpart
       display: flex
       .lefttop,
       .leftdown
         padding-bottom: 15px
+        img
+          max-height: 150px !important
       .leftdown
         border-right: none
         border-bottom: 1px dashed orange
-    img
-      max-height: 150px !important
+
+  // .zakaznov,
+  // .zakazott
+  //   .leftpart, 
+  //   .rightpart
+  //     max-width: 100% !important
+
+
+  .zakaznov--makets
+    .bodyzakaz
+      flex-flow: column
+      padding: 0
+    .leftpart,
+    .rightpart
+      max-width: 100% !important
+    .leftpart
+      flex-flow: row
+      align-items: flex-end
+
+  .production-facsimile
+    flex-flow: wrap
 
 
 @media ( max-width: 450px )
@@ -792,11 +1109,6 @@ a, button, .btn, .hamburger-btn
       width: 100%
 
 
-  .zakaznov .bodyzakaz .leftpart, 
-  .zakaznov .bodyzakaz .rightpart 
-    img
-      height: auto
-
   .bodyzakaz 
     .wblock
       flex-flow: wrap
@@ -804,9 +1116,23 @@ a, button, .btn, .hamburger-btn
 
   .zakaznov
     .bodyzakaz
-    .leftpart
-      img
-        max-height: 100px !important
+      flex-flow: column
+      .leftpart,
+      .rightpart
+        img
+          height: auto
+      .leftpart
+        .lefttop,
+        .leftdown
+          img
+            max-height: 100px !important
+  
+  .zakaznov,
+  .zakazott
+    .leftpart, 
+    .rightpart
+      max-width: 100% !important
+
 
 
 

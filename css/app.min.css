@@ -1,3 +1,7 @@
+jdiv {
+  z-index: 111 !important;
+}
+
 body {
   width: 100%;
   background: #fff;
@@ -37,6 +41,38 @@ img {
 .w60 {
   width: 100%;
   max-width: 60%;
+}
+
+a {
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+a:hover {
+  color: #d27000;
+}
+
+.Header a {
+  color: #d27000;
+  text-decoration: none;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.Header a:hover {
+  color: #212121 !important;
+}
+
+.Header .HeaderHolder .Contacts .Message a {
+  font-size: large;
+}
+
+.production-stamps {
+  height: 320px !important;
+}
+
+.production-facsimile {
+  height: 300px !important;
 }
 
 .files-container {
@@ -170,15 +206,228 @@ div.tbForm > div form {
   border-radius: 15px;
 }
 
+div.tbForm > div .pr {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div.tbForm > div .pr .div_file {
+  max-height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+div.tbForm > div .pr input {
+  width: 100%;
+  margin-top: 15px !important;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+div.tbForm textarea {
+  min-height: 100px !important;
+}
+
 .wrap_1ba2 {
   z-index: 111 !important;
 }
 
 a, button, .btn, .hamburger-btn {
   -webkit-tap-highlight-color: transparent;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.progress-box {
+  width: 100% !important;
+  max-width: 500px !important;
+  margin: auto;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.production-stamps img {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.zakaznov--100 {
+  max-width: 100% !important;
+}
+
+.knopka,
+input[type=submit],
+input[type=button],
+button[type=submit] {
+  height: 40px;
+  min-width: 100px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #e67e22;
+  font: bold 16px arial;
+  color: white;
+  cursor: pointer;
+}
+
+.block4 {
+  background: none;
+}
+
+.block1,
+.block5 {
+  height: auto !important;
+}
+
+.block1 .tariffs3,
+.block5 .tariffs3 {
+  height: auto !important;
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.block1 .tariffs3 > div,
+.block5 .tariffs3 > div {
+  width: 100% !important;
+  height: auto !important;
+  max-width: 700px !important;
+  height: auto !important;
+}
+
+.check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.check input[type=text],
+.check input[type=button] {
+  min-height: 40px;
+  padding: 10px;
+  margin: 10px !important;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.priceakcii {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.priceakcii p {
+  width: 100%;
+}
+
+.priceakcii img {
+  width: 200px !important;
+  max-height: 200px !important;
+  margin-bottom: 10px !important;
+  -o-object-fit: contain !important;
+     object-fit: contain !important;
+}
+
+.priceakcii span {
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.contact_form {
+  width: 100%;
+  height: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.contact_form #selosnnov2 {
+  height: 30px;
+  margin-bottom: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.contact_form p {
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 3px;
+}
+
+.contact_form textarea,
+.contact_form input[type=text],
+.contact_form input[type=file],
+.contact_form input[type=name],
+.contact_form input[type=email],
+.contact_form input[type=tel] {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.contact_form input[type=submit],
+.contact_form button[type=submit] {
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 @media (max-width: 1000px) {
+  h2 {
+    margin-top: 20px;
+  }
   .Header {
     height: auto;
     padding: 10px;
@@ -294,6 +543,12 @@ a, button, .btn, .hamburger-btn {
     width: 100%;
     text-align: center;
   }
+  .breadcrumbs {
+    margin: 0 auto 25px 0;
+  }
+  .breadcrumbs ol {
+    padding: 0;
+  }
   .MainPlBl {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -337,6 +592,61 @@ a, button, .btn, .hamburger-btn {
     -o-object-fit: contain;
        object-fit: contain;
   }
+  .MainPlBl > span {
+    width: 100%;
+    margin: 25px 0;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .MainPlBl > font {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  .MainPlBl > font + .ItEl {
+    width: 150px;
+    padding: 5px;
+    margin: 5px auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .MainPlBl .ItEl {
+    width: 150px;
+    padding: 5px;
+    margin: 5px auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
   .formazakaza {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -356,6 +666,12 @@ a, button, .btn, .hamburger-btn {
   .formazakaza .order-panel:nth-of-type(3) {
     margin-bottom: 20px;
   }
+  .formazakaza .zakaznov,
+  .formazakaza .zakazott,
+  .formazakaza .zakazstamp {
+    margin-left: 0;
+    margin-bottom: 7px;
+  }
   .order-panel {
     width: 100%;
     max-width: 465px;
@@ -371,58 +687,84 @@ a, button, .btn, .hamburger-btn {
   .zakaznov .bodyzakaz,
   .zakazott .bodyzakaz,
   .zakazstamp .bodyzakaz {
-    min-height: 300px !important;
     max-height: unset !important;
-    padding: 0 10px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
   }
-  .zakaznov .bodyzakaz .leftpart,
-  .zakaznov .bodyzakaz .rightpart,
-  .zakazott .bodyzakaz .leftpart,
-  .zakazott .bodyzakaz .rightpart,
-  .zakazstamp .bodyzakaz .leftpart,
-  .zakazstamp .bodyzakaz .rightpart {
+  .zakaznov .bodyzakaz + .leftpart,
+  .zakaznov .bodyzakaz + .rightpart,
+  .zakazott .bodyzakaz + .leftpart,
+  .zakazott .bodyzakaz + .rightpart,
+  .zakazstamp .bodyzakaz + .leftpart,
+  .zakazstamp .bodyzakaz + .rightpart {
     max-width: 50%;
   }
-  .zakaznov .bodyzakaz .leftpart img,
-  .zakaznov .bodyzakaz .rightpart img,
-  .zakazott .bodyzakaz .leftpart img,
-  .zakazott .bodyzakaz .rightpart img,
-  .zakazstamp .bodyzakaz .leftpart img,
-  .zakazstamp .bodyzakaz .rightpart img {
+  .zakaznov .bodyzakaz + .leftpart img,
+  .zakaznov .bodyzakaz + .rightpart img,
+  .zakazott .bodyzakaz + .leftpart img,
+  .zakazott .bodyzakaz + .rightpart img,
+  .zakazstamp .bodyzakaz + .leftpart img,
+  .zakazstamp .bodyzakaz + .rightpart img {
     width: 100%;
     height: 100% !important;
-    max-height: 300px;
+    max-height: 225px;
     -o-object-fit: cover;
        object-fit: cover;
   }
-  .zakaznov {
-    min-width: 90%;
-    max-width: unset;
+  .zakazstamp {
+    max-width: 100%;
+    padding: 0;
+  }
+  .zakazott .leftpart,
+  .zakazott .rightpart {
+    width: 100% !important;
+    max-width: 50% !important;
   }
   .zakaznov .bodyzakaz {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row;
-            flex-flow: row;
+    padding: 0;
+    -ms-flex-flow: wrap;
+        flex-flow: wrap;
   }
   .zakaznov .leftpart,
   .zakaznov .rightpart {
-    width: 100%;
-    max-width: 100% !important;
-    margin: 10px 0;
+    width: 100% !important;
+    max-width: 50% !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
   }
   .zakaznov .leftpart img,
   .zakaznov .rightpart img {
     -o-object-fit: contain !important;
        object-fit: contain !important;
   }
-  .zakaznov .contact_form {
-    padding-left: 10px;
+  .zakaznov--makets {
+    width: 100%;
+    max-width: 900px;
   }
-  .zakaznov .contact_form textarea {
-    min-height: 100px !important;
+  .zakaznov--makets .bodyzakaz {
+    -ms-flex-flow: wrap;
+        flex-flow: wrap;
+    padding: 0;
+  }
+  .zakaznov--makets .leftpart,
+  .zakaznov--makets .rightpart {
+    -ms-flex-flow: wrap;
+        flex-flow: wrap;
+  }
+  .zakaznov--makets .leftpart .priceakcii,
+  .zakaznov--makets .rightpart .priceakcii {
+    width: 100%;
   }
   .bodyzakaz {
     width: 100% !important;
@@ -454,8 +796,9 @@ a, button, .btn, .hamburger-btn {
   }
   .bodyzakaz img {
     width: auto !important;
-    height: auto;
+    height: 100%;
     max-width: 200px !important;
+    max-height: 225px !important;
     -o-object-fit: contain;
        object-fit: contain;
   }
@@ -470,7 +813,67 @@ a, button, .btn, .hamburger-btn {
   .leftpart + .knopka,
   .rightpart + .knopka {
     width: 100%;
+    max-width: 50%;
+    min-width: 280px;
     margin: 0 auto;
+  }
+  .upside {
+    width: 100%;
+  }
+  .upside h2 {
+    margin-top: 10px;
+  }
+  .upside > div {
+    width: 100% !important;
+    margin: 0 !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-flow: wrap;
+        flex-flow: wrap;
+  }
+  .upside > div img {
+    max-width: 300px !important;
+  }
+  .upside > div p {
+    margin: 5px;
+    max-width: 200px;
+  }
+  .upside img {
+    width: 100% !important;
+    max-width: 250px !important;
+    height: auto !important;
+    margin: 10px 0 5px;
+  }
+  .downside {
+    width: 100%;
+  }
+  .priceakcii {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: wrap;
+        flex-flow: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .priceakcii p {
+    width: 100%;
+  }
+  .priceakcii img {
+    width: 200px !important;
+    max-height: 200px !important;
+    margin-bottom: 10px !important;
   }
   .icdos,
   .icgar,
@@ -484,7 +887,7 @@ a, button, .btn, .hamburger-btn {
   }
   .step-2 {
     min-height: unset;
-    margin-bottom: 0 auto 26px;
+    margin: 0 auto 26px;
   }
   .step-2 .w60 {
     display: -webkit-box;
@@ -493,9 +896,9 @@ a, button, .btn, .hamburger-btn {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     -ms-flex-flow: wrap;
         flex-flow: wrap;
   }
@@ -538,6 +941,9 @@ a, button, .btn, .hamburger-btn {
   .step-3 .w33 textarea,
   .step-3 .w33 div {
     width: 100% !important;
+  }
+  .step-3 .w33 textarea {
+    min-height: 120px !important;
   }
   .step-3 .w33 *,
   .step-3 .w33 ::after,
@@ -754,6 +1160,80 @@ a, button, .btn, .hamburger-btn {
     width: 100%;
     text-align: center;
   }
+  table.osn {
+    width: 100%;
+  }
+  table.osn tr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  table.osn td.osn {
+    width: 100%;
+    max-width: 200px;
+    text-align: center;
+    border-collapse: collapse;
+    border: 1px dotted #ccc;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 10px 5px;
+  }
+  table.osn td.osn img {
+    width: 100%;
+    height: 100%;
+    max-height: 150px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .block1 .tariffs3 > div,
+  .block5 .tariffs3 > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+  .block4 p + table {
+    width: 100%;
+  }
+  .block4 p + table tr {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: wrap;
+        flex-flow: wrap;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .block4 .rot_img_cont {
+    width: 100% !important;
+    max-width: 250px !important;
+    margin: 5px auto;
+  }
   @-webkit-keyframes to-left {
     0% {
       bottom: 0;
@@ -919,10 +1399,8 @@ a, button, .btn, .hamburger-btn {
   }
   .bodyzakaz {
     max-height: unset;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column;
-            flex-flow: column;
+    -ms-flex-flow: wrap;
+        flex-flow: wrap;
   }
   .bodyzakaz .wblock {
     width: 100% !important;
@@ -930,26 +1408,12 @@ a, button, .btn, .hamburger-btn {
   .formazakaza > div {
     width: 100% !important;
   }
-  .formazakaza .bodyzakaz {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
-  }
-  .formazakaza .bodyzakaz .leftpart,
-  .formazakaza .bodyzakaz .rightpart {
-    max-width: unset;
-  }
   .formazakaza .bodyzakaz > a {
     width: 100%;
   }
-  .formazakaza .zakaznov,
-  .formazakaza .zakazott,
-  .formazakaza .zakazstamp {
-    margin-left: 0;
-    margin-bottom: 7px;
-  }
   .total-block {
+    margin: 0 !important;
+    padding: 10px 0;
     width: auto;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -969,7 +1433,6 @@ a, button, .btn, .hamburger-btn {
   }
   .total-block .select-button {
     width: 100%;
-    top: 0 !important;
     margin-top: 30px !important;
   }
   form div {
@@ -990,8 +1453,8 @@ a, button, .btn, .hamburger-btn {
     max-width: 400px;
     height: auto !important;
     min-height: 30px !important;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    -webkit-box-sizing: border-box !important;
+            box-sizing: border-box !important;
   }
   input[type=submit],
   input[type=button],
@@ -1016,10 +1479,6 @@ a, button, .btn, .hamburger-btn {
   .w60 {
     max-width: 100% !important;
   }
-  .zakaznov .bodyzakaz {
-    -ms-flex-flow: wrap;
-        flex-flow: wrap;
-  }
   .zakaznov .leftpart {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1029,12 +1488,37 @@ a, button, .btn, .hamburger-btn {
   .zakaznov .leftpart .leftdown {
     padding-bottom: 15px;
   }
+  .zakaznov .leftpart .lefttop img,
+  .zakaznov .leftpart .leftdown img {
+    max-height: 150px !important;
+  }
   .zakaznov .leftpart .leftdown {
     border-right: none;
     border-bottom: 1px dashed orange;
   }
-  .zakaznov img {
-    max-height: 150px !important;
+  .zakaznov--makets .bodyzakaz {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    padding: 0;
+  }
+  .zakaznov--makets .leftpart,
+  .zakaznov--makets .rightpart {
+    max-width: 100% !important;
+  }
+  .zakaznov--makets .leftpart {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .production-facsimile {
+    -ms-flex-flow: wrap;
+        flex-flow: wrap;
   }
 }
 
@@ -1104,16 +1588,29 @@ a, button, .btn, .hamburger-btn {
   .block3 img {
     width: 100%;
   }
-  .zakaznov .bodyzakaz .leftpart img,
-  .zakaznov .bodyzakaz .rightpart img {
-    height: auto;
-  }
   .bodyzakaz .wblock {
     -ms-flex-flow: wrap;
         flex-flow: wrap;
   }
-  .zakaznov .leftpart img {
+  .zakaznov .bodyzakaz {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  .zakaznov .bodyzakaz .leftpart img,
+  .zakaznov .bodyzakaz .rightpart img {
+    height: auto;
+  }
+  .zakaznov .bodyzakaz .leftpart .lefttop img,
+  .zakaznov .bodyzakaz .leftpart .leftdown img {
     max-height: 100px !important;
+  }
+  .zakaznov .leftpart,
+  .zakaznov .rightpart,
+  .zakazott .leftpart,
+  .zakazott .rightpart {
+    max-width: 100% !important;
   }
 }
 
@@ -1133,6 +1630,10 @@ a, button, .btn, .hamburger-btn {
   border: none;
   background: none;
   cursor: pointer;
+  border: none;
+  outline: none;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
 }
 
 @media (min-width: 768px) {

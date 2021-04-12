@@ -32,19 +32,19 @@ $from = "Reply-To: $email \r\n";
 if (mail($address, $sub, $mes, $from)) {
 	header("Location: ".$_SERVER["HTTP_REFERER"]);// Делаем реридект обратно
 	echo '<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />  <link rel="stylesheet" href="../css/app.min.css" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />    
+  <script src="/js/app.js"></script>
+  <link rel="stylesheet" href="/css/app.min.css" />
 </head>
-    <body>Письмо отправлено  <script src="js/app.js"></script>
-</body>';}
+    <body>Письмо отправлено</body>';}
 else {
   header('Refresh: 5; URL=http://www.pechaty24.ru');
 	echo '<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />  <link rel="stylesheet" href="../css/app.min.css" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />    
+  <script src="/js/app.js"></script>
+  <link rel="stylesheet" href="/css/app.min.css" />
 </head>
-    <body>Письмо не отправлено, через 5 секунд вы вернетесь на страницу YYY  <script src="js/app.js"></script>
-</body>';}
+    <body>Письмо не отправлено, через 5 секунд вы вернетесь на страницу YYY</body>';}
 }
 exit; /* Выход без сообщения, если поле bezspama чем-то заполнено */
 ?>
